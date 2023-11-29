@@ -1,10 +1,8 @@
 package com.green.greengram3.user;
 
 import com.green.greengram3.common.ResVo;
-import com.green.greengram3.user.model.UserSignupDto;
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
-import io.swagger.v3.oas.annotations.Parameters;
+import com.green.greengram3.user.model.*;
+import io.swagger.v3.oas.annotations.*;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
