@@ -10,4 +10,14 @@
         nm = #{nm},
         pic = #{pic}
     </insert>
+
+    <select id="selLoginInfoByUid">
+        SELECT iuser, nm, pic, upw
+        FROM t_user
+        <where>
+            <if test=" uid != null and uid !='' ">
+                uid = #{uid}
+            </if>
+        </where>
+    </select>
 </mapper>

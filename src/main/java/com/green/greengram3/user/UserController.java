@@ -19,4 +19,9 @@ public class UserController {
     public ResVo postSignup(@RequestBody UserSignupDto dto){
         return service.signup(dto);
     }
+
+    @PostMapping("/signin")
+    public UserSigninVo postSignin(@RequestBody UserSigninDto dto){
+        return service.signin(dto);
+    }
 }
