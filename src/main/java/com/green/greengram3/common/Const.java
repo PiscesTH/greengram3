@@ -10,4 +10,6 @@ public class Const {
 
     public static final int FAV_ON = 1;
     public static final int FAV_OFF = 0;
+
+    public static final int MAX_COMMENT_COUNT = 4;
 }

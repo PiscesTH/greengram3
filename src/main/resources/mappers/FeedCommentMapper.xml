@@ -11,4 +11,13 @@
             comment = #{comment}
     </insert>
 
+    <select id="selFeedCommentAll">
+        SELECT A.ifeed_comment AS ifeedComment, A.comment, A.created_at AS createdAt,
+            A.iuser AS writerIuser, B.nm AS writerNm, B.pic AS writerPic
+        FROM t_feed_comment A
+        JOIN t_user B
+        ON A.iuser = B.iuser
+        WHERE A.ifeed = #{ifeed}
+        LIMIT #{startIdx}, #{commentCnt}
+    </select>
 </mapper>

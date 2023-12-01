@@ -19,6 +19,7 @@ public class FeedService {
     private final FeedMapper feedMapper;
     private final FeedPicsMapper picsMapper;
     private final FeedFavMapper favMapper;
+    private final FeedCommentMapper commentMapper;
 
     public ResVo postFeed(FeedInsDto dto) {
         FeedInsProcDto pDto1 = FeedInsProcDto.builder()
@@ -40,9 +41,20 @@ public class FeedService {
         List<FeedSelVo> resultVo = feedMapper.selAllFeed(dto);
         Map<Integer, FeedSelVo> map = new HashMap<>();
         List<Integer> ifeeds = new ArrayList<>();
+        FeedSelCommentDto commentDto = new FeedSelCommentDto();
+        commentDto.setStartIdx(0);
+        commentDto.setCommentCnt(Const.MAX_COMMENT_COUNT);
         for (FeedSelVo vo : resultVo) {
             ifeeds.add(vo.getIfeed());
             map.put(vo.getIfeed(), vo);
+
+            commentDto.setIfeed(vo.getIfeed());
+            List<FeedSelCommentVo> commentVoList = commentMapper.selFeedCommentAll(commentDto);
+            vo.setComments(commentVoList);
+            if (commentVoList.size() == Const.MAX_COMMENT_COUNT){
+                vo.setIsMoreComment(1);
+                vo.getComments().remove(commentVoList.size()-1);
+            }
         }
         List<FeedSelPicVo> picsVo = picsMapper.selPicsByIfeeds(ifeeds);
         for (FeedSelPicVo picVo : picsVo) {

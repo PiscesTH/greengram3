@@ -1,6 +1,5 @@
 package com.green.greengram3.feed.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import java.util.ArrayList;
@@ -17,4 +16,6 @@ public class FeedSelVo {
     private String writerPic;
     private List<String> pics = new ArrayList<>();
     private int isFav;  //1 : 좋아요 있음,  0: 좋아요 없음
+    private List<FeedSelCommentVo> comments;
+    private int isMoreComment; //0: 댓글 더 없음, 1:댓글 더 있음
 }
