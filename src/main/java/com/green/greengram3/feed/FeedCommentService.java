@@ -2,9 +2,13 @@ package com.green.greengram3.feed;
 
 import com.green.greengram3.common.ResVo;
 import com.green.greengram3.feed.model.FeedInsCommentDto;
+import com.green.greengram3.feed.model.FeedSelCommentDto;
+import com.green.greengram3.feed.model.FeedSelCommentVo;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Slf4j
 @Service
@@ -18,5 +22,14 @@ public class FeedCommentService {
             return new ResVo(insResult);
         }
         return new ResVo(dto.getIfeedComment());
+    }
+
+    public List<FeedSelCommentVo> getFeedCommentAll(int ifeed){
+        FeedSelCommentDto dto = FeedSelCommentDto.builder()
+                .startIdx(3)
+                .commentCnt(999)
+                .ifeed(ifeed)
+                .build();
+        return commentMapper.selFeedCommentAll(dto);
     }
 }

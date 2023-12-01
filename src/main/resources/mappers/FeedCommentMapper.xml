@@ -18,6 +18,7 @@
         JOIN t_user B
         ON A.iuser = B.iuser
         WHERE A.ifeed = #{ifeed}
+        ORDER BY A.ifeed_comment
         LIMIT #{startIdx}, #{commentCnt}
     </select>
 </mapper>
