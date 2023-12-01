@@ -1,5 +1,6 @@
 package com.green.greengram3.feed;
 
+import com.green.greengram3.common.Const;
 import com.green.greengram3.common.ResVo;
 import com.green.greengram3.feed.model.*;
 import lombok.RequiredArgsConstructor;
@@ -17,6 +18,7 @@ import java.util.Map;
 public class FeedService {
     private final FeedMapper feedMapper;
     private final FeedPicsMapper picsMapper;
+    private final FeedFavMapper favMapper;
 
     public ResVo postFeed(FeedInsDto dto) {
         FeedInsProcDto pDto1 = FeedInsProcDto.builder()
@@ -34,18 +36,32 @@ public class FeedService {
         return new ResVo(pDto1.getIfeed());
     }
 
-    public List<FeedSelVo> getAllFeed(FeedSelDto dto){
+    public List<FeedSelVo> getAllFeed(FeedSelDto dto) {
         List<FeedSelVo> resultVo = feedMapper.selAllFeed(dto);
-        Map<Integer,FeedSelVo> map = new HashMap<>();
+        Map<Integer, FeedSelVo> map = new HashMap<>();
         List<Integer> ifeeds = new ArrayList<>();
         for (FeedSelVo vo : resultVo) {
             ifeeds.add(vo.getIfeed());
-            map.put(vo.getIfeed(),vo);
+            map.put(vo.getIfeed(), vo);
         }
         List<FeedSelPicVo> picsVo = picsMapper.selPicsByIfeeds(ifeeds);
         for (FeedSelPicVo picVo : picsVo) {
             map.get(picVo.getIfeed()).getPics().add(picVo.getPic());
         }
         return resultVo;
+    }
+
+    //좋아요 취소 - 0, 등록 - 1
+    public ResVo toggleFeedFav(FeedToggleFavDto dto) {
+        try {
+            int delResult = favMapper.delFeedFav(dto);
+            if (delResult == 1) {
+                return new ResVo(Const.FAV_OFF);
+            }
+            int insResult = favMapper.insFeedFav(dto);
+            return new ResVo(Const.FAV_ON);
+        } catch (Exception e) {
+            return new ResVo(Const.FAV_OFF);
+        }
     }
 }

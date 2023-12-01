@@ -30,4 +30,10 @@ public class FeedController {
     public List<FeedSelVo> getAllFeed(int page) {
         return service.getAllFeed(new FeedSelDto(page));
     }
+
+    @Operation(summary = "좋아요 처리", description = "좋아요 취소 - 0, 등록 - 1")
+    @GetMapping("/fav")
+    public ResVo toggleFav(FeedToggleFavDto dto){
+        return service.toggleFeedFav(dto);
+    }
 }
