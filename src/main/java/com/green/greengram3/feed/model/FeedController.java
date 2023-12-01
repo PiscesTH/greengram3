@@ -27,8 +27,8 @@ public class FeedController {
 
     @Operation(summary = "전체 피드 조회")
     @GetMapping
-    public List<FeedSelVo> getAllFeed(int page) {
-        return service.getAllFeed(new FeedSelDto(page));
+    public List<FeedSelVo> getAllFeed(FeedSelDto dto) {
+        return service.getAllFeed(dto);
     }
 
     @Operation(summary = "좋아요 처리", description = "좋아요 취소 - 0, 등록 - 1")

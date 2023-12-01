@@ -12,10 +12,14 @@
 
     <select id="selAllFeed">
         SELECT A.ifeed, A.contents, A.location, A.created_at AS createdAt,
-            iuser AS writerIuser, B.nm AS writerNm, B.pic AS writerPic
+            A.iuser AS writerIuser, B.nm AS writerNm, B.pic AS writerPic,
+        IF(C.ifeed > 0, 1, 0) AS isFav
         FROM t_feed A
         JOIN t_user B
-        USING (iuser)
+        ON A.iuser = B.iuser
+        LEFT JOIN t_feed_fav C
+        ON A.ifeed = C.ifeed
+        AND C.iuser = #{loginedIuser}
         ORDER BY ifeed DESC
         LIMIT #{startIdx}, #{feedCnt}
     </select>
