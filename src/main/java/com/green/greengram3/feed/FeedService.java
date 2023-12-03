@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 @Slf4j
 @Service
@@ -40,7 +41,9 @@ public class FeedService {
     public List<FeedSelVo> getAllFeed(FeedSelDto dto) {
         List<FeedSelVo> resultVo = feedMapper.selAllFeed(dto);
         Map<Integer, FeedSelVo> map = new HashMap<>();
+        //Map<Integer, FeedSelVo> map = resultVo.stream().collect(Collectors.toMap(FeedSelVo::getIfeed, FeedSelVo::getSelf));
         List<Integer> ifeeds = new ArrayList<>();
+//        List<Integer> ifeeds2 = resultVo.stream().map(FeedSelVo::getIfeed).toList();
         FeedSelCommentDto commentDto = FeedSelCommentDto.builder()
                 .startIdx(0)
                 .commentCnt(Const.MAX_COMMENT_COUNT)
