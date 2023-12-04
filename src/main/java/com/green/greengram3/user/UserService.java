@@ -13,9 +13,10 @@ import org.springframework.stereotype.*;
 @RequiredArgsConstructor
 public class UserService {
     private final UserMapper userMapper;
+    private final UserFollowMapper followMapper;
 
-    public ResVo signup(UserSignupDto dto){
-        String hasedUpw = BCrypt.hashpw(dto.getUpw(),BCrypt.gensalt());
+    public ResVo signup(UserSignupDto dto) {
+        String hasedUpw = BCrypt.hashpw(dto.getUpw(), BCrypt.gensalt());
         UserSignupProcDto pDto = UserSignupProcDto.builder()
                 .uid(dto.getUid())
                 .nm(dto.getNm())
@@ -26,14 +27,14 @@ public class UserService {
         return new ResVo(pDto.getIuser());    //회원가입한 iuser pk 값 리턴
     }
 
-    public UserSigninVo signin(UserSigninDto dto){
+    public UserSigninVo signin(UserSigninDto dto) {
         UserSigninProcVo procVo = userMapper.selLoginInfoByUid(dto.getUid());
-        if (procVo == null){
+        if (procVo == null) {
             return UserSigninVo.builder()
                     .result(Const.LOGIN_NO_UID)
                     .build();
         }
-        if (BCrypt.checkpw(dto.getUpw(),procVo.getUpw())){
+        if (BCrypt.checkpw(dto.getUpw(), procVo.getUpw())) {
             return UserSigninVo.builder()
                     .iuser(procVo.getIuser())
                     .nm(procVo.getNm())
@@ -42,5 +43,18 @@ public class UserService {
                     .build();
         }
         return UserSigninVo.builder().result(Const.LOGIN_DIFF_UPW).build();
+    }
+
+    public ResVo toggleFollow(UserFollowDto dto) {
+        int delResult = followMapper.delFollow(dto);
+        if (delResult == 1) {
+            return new ResVo(Const.FAIL);
+        }
+        try {
+            int insResult = followMapper.insFollow(dto);
+            return new ResVo(Const.SUCCESS);
+        } catch (Exception e) {
+            return new ResVo(Const.FAIL);
+        }
     }
 }

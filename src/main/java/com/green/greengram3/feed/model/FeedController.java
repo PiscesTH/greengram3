@@ -25,6 +25,7 @@ public class FeedController {
         return service.postFeed(dto);
     }
 
+
     @Operation(summary = "전체 피드 조회")
     @GetMapping
     public List<FeedSelVo> getAllFeed(FeedSelDto dto) {

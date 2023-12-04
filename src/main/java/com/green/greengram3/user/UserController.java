@@ -29,5 +29,9 @@ public class UserController {
         return service.signin(dto);
     }
 
-
+    @Operation(summary = "팔로우 처리")
+    @PostMapping("/follow")
+    public ResVo toggleFollow(@RequestBody UserFollowDto dto){
+        return service.toggleFollow(dto);
+    }
 }
