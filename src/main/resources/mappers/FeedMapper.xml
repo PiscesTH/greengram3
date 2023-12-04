@@ -17,9 +17,19 @@
         FROM t_feed A
         JOIN t_user B
         ON A.iuser = B.iuser
-        LEFT JOIN t_feed_fav C
+        <choose>
+            <when test="isFavList == 1">
+                INNER JOIN t_feed_fav C
+            </when>
+            <otherwise>
+                LEFT JOIN t_feed_fav C
+            </otherwise>
+        </choose>
         ON A.ifeed = C.ifeed
         AND C.iuser = #{loginedIuser}
+        <if test="isFavList == 0 and targetIuser > 0">
+            WHERE A.iuser = #{targetIuser}
+        </if>
         ORDER BY ifeed DESC
         LIMIT #{startIdx}, #{feedCnt}
     </select>
