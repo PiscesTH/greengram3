@@ -80,4 +80,10 @@ public class FeedService {
             return new ResVo(Const.FAV_OFF);
         }
     }
+
+    public ResVo delFeed(FeedDelDto dto){
+        int delProcResult = feedMapper.delFeedProc(dto);
+        int delResult = feedMapper.delFeed(dto);
+        return new ResVo(delResult);
+    }
 }

@@ -40,6 +40,6 @@ public class FeedController {
     @DeleteMapping
     public ResVo delFeed(FeedDelDto dto){
         log.info("dto : {}",dto);
-        return null;
+        return service.delFeed(dto);
     }
 }

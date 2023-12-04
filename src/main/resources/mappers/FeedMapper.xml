@@ -23,4 +23,21 @@
         ORDER BY ifeed DESC
         LIMIT #{startIdx}, #{feedCnt}
     </select>
+
+    <delete id="delFeedProc">
+        DELETE B, C, D
+        FROM t_feed A
+        LEFT JOIN t_feed_fav B
+        ON A.ifeed = B.ifeed
+        LEFT JOIN t_feed_pics C
+        ON A.ifeed = C.ifeed
+        LEFT JOIN t_feed_comment D
+        ON A.ifeed = D.ifeed
+        WHERE (A.ifeed, A.iuser) = (#{ifeed}, #{iuser})
+    </delete>
+
+    <delete id="delFeed">
+        DELETE FROM t_feed
+        WHERE ifeed = #{ifeed}
+    </delete>
 </mapper>
