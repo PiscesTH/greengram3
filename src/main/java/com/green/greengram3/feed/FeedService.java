@@ -42,14 +42,14 @@ public class FeedService {
         List<FeedSelVo> resultVo = feedMapper.selAllFeed(dto);
         Map<Integer, FeedSelVo> map = new HashMap<>();
         //Map<Integer, FeedSelVo> map = resultVo.stream().collect(Collectors.toMap(FeedSelVo::getIfeed, FeedSelVo::getSelf));
-        List<Integer> ifeeds = new ArrayList<>();
-        //List<Integer> ifeeds2 = resultVo.stream().map(FeedSelVo::getIfeed).toList();
+        //List<Integer> ifeeds = new ArrayList<>();
+        List<Integer> ifeeds = resultVo.stream().map(FeedSelVo::getIfeed).toList();
         FeedSelCommentDto commentDto = FeedSelCommentDto.builder()
                 .startIdx(0)
                 .commentCnt(Const.MAX_COMMENT_COUNT)
                 .build();
         for (FeedSelVo vo : resultVo) {
-            ifeeds.add(vo.getIfeed());
+            //ifeeds.add(vo.getIfeed());
             map.put(vo.getIfeed(), vo);
 
             commentDto.setIfeed(vo.getIfeed());
@@ -81,9 +81,13 @@ public class FeedService {
         }
     }
 
-    public ResVo delFeed(FeedDelDto dto){
-        int delProcResult = feedMapper.delFeedProc(dto);
-        int delResult = feedMapper.delFeed(dto);
-        return new ResVo(delResult);
+    public ResVo delFeed(FeedDelDto dto) {
+        try {
+            int delProcResult = feedMapper.delFeedProc(dto);
+            int delResult = feedMapper.delFeed(dto);
+            return new ResVo(delResult);
+        } catch (Exception e) {
+            return new ResVo(0);
+        }
     }
 }

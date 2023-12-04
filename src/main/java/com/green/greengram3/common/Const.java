@@ -12,4 +12,7 @@ public class Const {
     public static final int FAV_OFF = 0;
 
     public static final int MAX_COMMENT_COUNT = 4;
+
+    public static final int FAIL = 0;
+    public static final int SUCCESS = 1;
 }

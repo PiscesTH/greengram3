@@ -38,6 +38,6 @@
 
     <delete id="delFeed">
         DELETE FROM t_feed
-        WHERE ifeed = #{ifeed}
+        WHERE (ifeed, iuser) = (#{ifeed}, #{iuser})
     </delete>
 </mapper>
