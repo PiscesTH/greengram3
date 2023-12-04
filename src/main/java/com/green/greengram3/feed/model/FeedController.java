@@ -36,4 +36,10 @@ public class FeedController {
     public ResVo toggleFav(FeedToggleFavDto dto){
         return service.toggleFeedFav(dto);
     }
+
+    @DeleteMapping
+    public ResVo delFeed(FeedDelDto dto){
+        log.info("dto : {}",dto);
+        return null;
+    }
 }

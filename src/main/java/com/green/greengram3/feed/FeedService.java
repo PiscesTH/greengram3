@@ -43,7 +43,7 @@ public class FeedService {
         Map<Integer, FeedSelVo> map = new HashMap<>();
         //Map<Integer, FeedSelVo> map = resultVo.stream().collect(Collectors.toMap(FeedSelVo::getIfeed, FeedSelVo::getSelf));
         List<Integer> ifeeds = new ArrayList<>();
-//        List<Integer> ifeeds2 = resultVo.stream().map(FeedSelVo::getIfeed).toList();
+        //List<Integer> ifeeds2 = resultVo.stream().map(FeedSelVo::getIfeed).toList();
         FeedSelCommentDto commentDto = FeedSelCommentDto.builder()
                 .startIdx(0)
                 .commentCnt(Const.MAX_COMMENT_COUNT)
