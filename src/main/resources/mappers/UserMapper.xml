@@ -21,4 +21,25 @@
         </where>
     </select>
 
+    <select id="selUserInfo">
+        SELECT A.nm, A.pic, DATE(A.created_at) AS createdAt
+        , COUNT(DISTINCT B.ifeed) AS feedCnt
+        , COUNT(C.ifeed) AS favCnt
+        , D.following, D.follower, D.followState
+        FROM t_user A
+        LEFT JOIN t_feed B
+        ON A.iuser = B.iuser
+        LEFT JOIN t_feed_fav C
+        ON B.ifeed = C.ifeed
+        INNER JOIN (
+        SELECT
+              SUM(case from_iuser when #{targetIuser} then 1 ELSE 0 END) AS following
+            , SUM(CASE to_iuser WHEN #{targetIuser} THEN 1 ELSE 0 END) AS follower
+            , (SUM(CASE WHEN from_iuser = #{loginedIuser} AND to_iuser = #{targetIuser} THEN 1 ELSE 0 END)
+            + SUM(CASE WHEN from_iuser = #{targetIuser} AND to_iuser = #{loginedIuser} THEN 2 ELSE 0 END)) AS followState
+        FROM t_user_follow
+        ) AS D
+        WHERE A.iuser = #{targetIuser}
+    </select>
+
 </mapper>
