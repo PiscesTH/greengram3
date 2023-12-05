@@ -33,8 +33,8 @@
         ON B.ifeed = C.ifeed
         INNER JOIN (
         SELECT
-              SUM(case from_iuser when #{targetIuser} then 1 ELSE 0 END) AS following
-            , SUM(CASE to_iuser WHEN #{targetIuser} THEN 1 ELSE 0 END) AS follower
+              SUM(if (from_iuser = #{targetIuser} ,1 ,0) ) AS following
+            , SUM(if (to_iuser = #{targetIuser} ,1 ,0) ) AS follower
             , (SUM(CASE WHEN from_iuser = #{loginedIuser} AND to_iuser = #{targetIuser} THEN 1 ELSE 0 END)
             + SUM(CASE WHEN from_iuser = #{targetIuser} AND to_iuser = #{loginedIuser} THEN 2 ELSE 0 END)) AS followState
         FROM t_user_follow
