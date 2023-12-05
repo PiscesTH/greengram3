@@ -34,4 +34,6 @@ public class UserController {
     public ResVo toggleFollow(@RequestBody UserFollowDto dto){
         return service.toggleFollow(dto);
     }
+
+
 }
