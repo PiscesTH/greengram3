@@ -15,4 +15,15 @@
         SET idm = #{idm},
             iuser = #{iuser}
     </insert>
+
+    <select id="selDmMsgAll">
+        SELECT A.seq, iuser AS writerIuser, B.pic AS writerPic,
+            A.msg, A.created_at AS createdAt
+        FROM t_dm_msg A
+        JOIN t_user B
+        USING (iuser)
+        WHERE A.idm = #{idm}
+        ORDER BY A.seq DESC
+        LIMIT #{startIdx}, #{rowCount}
+    </select>
 </mapper>

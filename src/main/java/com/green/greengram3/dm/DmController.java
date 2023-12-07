@@ -1,5 +1,6 @@
 package com.green.greengram3.dm;
 
+import com.green.greengram3.common.Const;
 import com.green.greengram3.dm.model.DmSelMsgDto;
 import com.green.greengram3.dm.model.DmSelMsgVo;
 import io.swagger.v3.oas.annotations.Operation;
@@ -22,6 +23,8 @@ public class DmController {
     @GetMapping("/msg")
     public List<DmSelMsgVo> getMsgAll(DmSelMsgDto dto) {
         log.info("dto : {}", dto);
+        dto.setRowCount(Const.DM_COUNT_PER_PAGE);
+        dto.setStartIdx((dto.getPage() - 1) * Const.DM_COUNT_PER_PAGE);
         return service.getMsgAll(dto);
     }
 }

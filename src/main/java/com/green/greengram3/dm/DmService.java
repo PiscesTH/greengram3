@@ -15,7 +15,6 @@ public class DmService {
     private final DmMapper mapper;
 
     public List<DmSelMsgVo> getMsgAll(DmSelMsgDto dto){
-
-        return null;
+        return mapper.selDmMsgAll(dto);
     }
 }
