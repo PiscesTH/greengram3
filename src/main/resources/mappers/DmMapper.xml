@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.green.greengram3.dm.DmMapper">
+    <insert id="insDm" useGeneratedKeys="true" keyProperty="idm">
+        INSERT INTO t_dm
+        (last_msg)
+        VALUES
+        (NULL)
+    </insert>
+
+    <insert id="insDmUser">
+        INSERT INTO t_dm_user
+        SET idm = #{idm},
+            iuser = #{iuser}
+    </insert>
+</mapper>
