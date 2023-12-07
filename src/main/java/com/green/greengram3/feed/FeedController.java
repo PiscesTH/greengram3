@@ -1,8 +1,9 @@
-package com.green.greengram3.feed.model;
+package com.green.greengram3.feed;
 
 import com.green.greengram3.common.Const;
 import com.green.greengram3.common.ResVo;
 import com.green.greengram3.feed.FeedService;
+import com.green.greengram3.feed.model.*;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;

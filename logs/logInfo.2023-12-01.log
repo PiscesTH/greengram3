@@ -154,7 +154,7 @@ java.sql.SQLIntegrityConstraintViolationException: (conn=44) Cannot add or updat
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
 	at jdk.proxy3/jdk.proxy3.$Proxy76.insFeedFav(Unknown Source)
 	at com.green.greengram3.feed.FeedService.toggleFeedFav(FeedService.java:60)
-	at com.green.greengram3.feed.model.FeedController.toggleFav(FeedController.java:37)
+	at com.green.greengram3.feed.FeedController.toggleFav(FeedController.java:37)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

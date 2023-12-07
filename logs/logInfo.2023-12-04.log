@@ -162,7 +162,7 @@ com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Direct self-refer
 [2023-12-04 09:56:45 [32mINFO [0;39m http-nio-8082-exec-5] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Starting...[0;39m
 [2023-12-04 09:56:45 [32mINFO [0;39m http-nio-8082-exec-5] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-1 - Added connection org.mariadb.jdbc.Connection@526fd1c4[0;39m
 [2023-12-04 09:56:45 [32mINFO [0;39m http-nio-8082-exec-5] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Start completed.[0;39m
-[2023-12-04 09:57:21 [32mINFO [0;39m http-nio-8082-exec-8] [com.green.greengram3.feed.model.FeedController] [36mdto : FeedDelDto(ifeed=5, iuser=4)[0;39m
+[2023-12-04 09:57:21 [32mINFO [0;39m http-nio-8082-exec-8] [com.green.greengram3.feed.FeedController] [36mdto : FeedDelDto(ifeed=5, iuser=4)[0;39m
 [2023-12-04 09:58:50 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown initiated...[0;39m
 [2023-12-04 09:58:50 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown completed.[0;39m
 [2023-12-04 10:04:04 [32mINFO [0;39m restartedMain] [com.green.greengram3.Greengram3Application] [36mStarting Greengram3Application using Java 17.0.8.1 with PID 4312 (D:\Students\kth\greengram3\target\classes started by Administrator in D:\Students\kth\greengram3)[0;39m
@@ -183,7 +183,7 @@ com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Direct self-refer
 [2023-12-04 10:04:12 [32mINFO [0;39m http-nio-8082-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2023-12-04 10:04:12 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-04 10:04:12 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 0 ms[0;39m
-[2023-12-04 10:04:12 [32mINFO [0;39m http-nio-8082-exec-1] [com.green.greengram3.feed.model.FeedController] [36mdto : FeedDelDto(ifeed=4, iuser=4)[0;39m
+[2023-12-04 10:04:12 [32mINFO [0;39m http-nio-8082-exec-1] [com.green.greengram3.feed.FeedController] [36mdto : FeedDelDto(ifeed=4, iuser=4)[0;39m
 [2023-12-04 10:04:12 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Starting...[0;39m
 [2023-12-04 10:04:12 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-1 - Added connection org.mariadb.jdbc.Connection@9337a09[0;39m
 [2023-12-04 10:04:12 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Start completed.[0;39m
