@@ -39,7 +39,7 @@
         ON C.iuser = D.iuser
         WHERE B.iuser = #{loginedIuser}
         AND C.iuser != #{loginedIuser}
-        ORDER BY B.last_msg DESC
+        ORDER BY A.last_msg DESC
         LIMIT #{startIdx}, #{rowCount}
     </select>
 </mapper>
