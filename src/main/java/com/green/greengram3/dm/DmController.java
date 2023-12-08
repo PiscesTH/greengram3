@@ -1,16 +1,12 @@
 package com.green.greengram3.dm;
 
 import com.green.greengram3.common.Const;
-import com.green.greengram3.dm.model.DmSelDto;
-import com.green.greengram3.dm.model.DmSelMsgDto;
-import com.green.greengram3.dm.model.DmSelMsgVo;
-import com.green.greengram3.dm.model.DmSelVo;
+import com.green.greengram3.common.ResVo;
+import com.green.greengram3.dm.model.*;
 import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -29,9 +25,14 @@ public class DmController {
         dto.setStartIdx((dto.getPage() - 1) * Const.DM_MSG_COUNT_PER_PAGE);
         return service.getMsgAll(dto);
     }
-    @Operation(summary = "DM 리스트 불러오기")
+    @Operation(summary = "dm 리스트 불러오기")
     @GetMapping
     public List<DmSelVo> getDmAll(DmSelDto dto) {
         return service.getDmAll(dto);
+    }
+    @Operation(summary = "dm 메세지 작성")
+    @PostMapping("/msg")
+    public ResVo postDmMsg(@RequestBody DmInsMsgDto dto){
+        return service.postDmMsg(dto);
     }
 }
