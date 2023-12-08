@@ -20,7 +20,6 @@ public class DmController {
     @Operation(summary = "dm 불러오기")
     @GetMapping("/msg")
     public List<DmSelMsgVo> getMsgAll(DmSelMsgDto dto) {
-        log.info("dto : {}", dto);
         dto.setRowCount(Const.DM_MSG_COUNT_PER_PAGE);
         dto.setStartIdx((dto.getPage() - 1) * Const.DM_MSG_COUNT_PER_PAGE);
         return service.getMsgAll(dto);
