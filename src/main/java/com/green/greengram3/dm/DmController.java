@@ -19,7 +19,7 @@ public class DmController {
 
     @Operation(summary = "dm 불러오기")
     @GetMapping("/msg")
-    public List<DmSelMsgVo> getMsgAll(DmSelMsgDto dto) {
+    public List<DmSelMsgAllVo> getMsgAll(DmSelMsgDto dto) {
         dto.setRowCount(Const.DM_MSG_COUNT_PER_PAGE);
         dto.setStartIdx((dto.getPage() - 1) * Const.DM_MSG_COUNT_PER_PAGE);
         return service.getMsgAll(dto);
@@ -33,5 +33,11 @@ public class DmController {
     @PostMapping("/msg")
     public ResVo postDmMsg(@RequestBody DmInsMsgDto dto){
         return service.postDmMsg(dto);
+    }
+
+    @Operation(summary = "dm 특정 메시지 삭제")
+    @DeleteMapping("/msg")
+    public ResVo delDmMsg(DmDelMsgDto dto) {
+        return service.delDmMsg(dto);
     }
 }

@@ -8,6 +8,7 @@ import java.util.List;
 @Mapper
 public interface DmMapper {
     int insDmMsg(DmInsMsgDto dto);
-    List<DmSelMsgVo> selDmMsgAll(DmSelMsgDto dto);
+    List<DmSelMsgAllVo> selDmMsgAll(DmSelMsgDto dto);
     List<DmSelVo> selDmAll(DmSelDto dto);
+    int delDmMsg(DmDelMsgDto dto);
 }

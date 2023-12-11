@@ -42,4 +42,9 @@
         ORDER BY A.last_msg DESC
         LIMIT #{startIdx}, #{rowCount}
     </select>
+
+    <delete id="delDmMsg">
+        DELETE FROM t_dm_msg
+        WHERE (idm, seq, iuser) = (#{idm}, #{seq}, #{iuser})
+    </delete>
 </mapper>

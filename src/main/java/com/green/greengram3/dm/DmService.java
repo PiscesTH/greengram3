@@ -14,7 +14,7 @@ import java.util.List;
 public class DmService {
     private final DmMapper mapper;
 
-    public List<DmSelMsgVo> getMsgAll(DmSelMsgDto dto){
+    public List<DmSelMsgAllVo> getMsgAll(DmSelMsgDto dto){
         return mapper.selDmMsgAll(dto);
     }
 
@@ -25,5 +25,10 @@ public class DmService {
     public ResVo postDmMsg(DmInsMsgDto dto) {
         int insResult = mapper.insDmMsg(dto);
         return new ResVo(dto.getSeq());
+    }
+
+    public ResVo delDmMsg(DmDelMsgDto dto) {
+        int delResult = mapper.delDmMsg(dto);
+        return new ResVo(delResult);
     }
 }

@@ -4,7 +4,7 @@ import lombok.Data;
 
 
 @Data
-public class DmSelMsgVo {
+public class DmSelMsgAllVo {
     private int seq;
     private int writerIuser;
     private String writerPic;
