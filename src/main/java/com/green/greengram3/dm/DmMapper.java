@@ -12,6 +12,6 @@ public interface DmMapper {
     List<DmSelVo> selDmAll(DmSelDto dto);
     int delDmMsg(DmDelMsgDto dto);
     int insDm(DmInsDto dto);
-    int insDmUser(DmInsProcDto dto);
+    int insDmUser(DmInsDto dto);
     Integer checkDmExist(DmInsDto dto);
 }

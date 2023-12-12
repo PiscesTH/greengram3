@@ -59,7 +59,8 @@
         INSERT INTO t_dm_user
         (idm, iuser)
         VALUES
-        (#{idm}, #{iuser})
+        (#{idm}, #{loginedIuser}),
+        (#{idm}, #{otherPersonIuser})
     </insert>
 
     <select id="checkDmExist">

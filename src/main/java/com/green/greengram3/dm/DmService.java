@@ -41,25 +41,18 @@ public class DmService {
         if (existDmCheck != null) {
             DmSelDto selDto = new DmSelDto();
             selDto.setLoginedIuser(dto.getLoginedIuser());
-            List<DmSelVo> list = mapper.selDmAll(selDto);
-            for (DmSelVo vo : list) {
+            List<DmSelVo> voList = mapper.selDmAll(selDto);
+            for (DmSelVo vo : voList) {
                 if (vo.getOtherPersonIuser() == existDmCheck) {
                     return vo;
                 }
             }
         }
-        /*int insDmResult = mapper.insDm(dto);
-        if (insDmResult == 0) {
-            return null; //dm방 생성 실패
+        int insDmResult = mapper.insDm(dto);
+        /*if (insDmResult == 0) {
+            return null; //dm방 생성 실패 처리는 ?
         }*/
-        int insDmFromUser = mapper.insDmUser(DmInsProcDto.builder()
-                .idm(dto.getIdm())
-                .iuser(dto.getLoginedIuser())
-                .build());
-        int insDmToUser = mapper.insDmUser(DmInsProcDto.builder()
-                .idm(dto.getIdm())
-                .iuser(dto.getOtherPersonIuser())
-                .build());
+        int insDmUser = mapper.insDmUser(dto);
         UserSigninProcVo procVo = userMapper.selLoginInfoByUid(UserSigninDto.builder()
                 .iuser(dto.getOtherPersonIuser())
                 .build());
