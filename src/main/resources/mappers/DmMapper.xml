@@ -64,13 +64,11 @@
     </insert>
 
     <select id="checkDmExist">
-        SELECT DISTINCT C.iuser
+        SELECT A.idm
         FROM t_dm_user A
-        left JOIN t_dm_user B
-        ON A.iuser = B.iuser
-        JOIN t_dm_user C
-        ON B.idm = C.idm
-        WHERE C.iuser = #{otherPersonIuser}
-        AND B.iuser = #{loginedIuser}
+        JOIN t_dm_user B
+        ON A.idm = B.idm
+        WHERE A.iuser = #{loginedIuser}
+        AND B.iuser = #{otherPersonIuser}
     </select>
 </mapper>
