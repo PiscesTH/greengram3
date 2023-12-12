@@ -6,6 +6,6 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface UserMapper {
     int insUser(UserSignupProcDto dto);
-    UserSigninProcVo selLoginInfoByUid(String uid);
+    UserSigninProcVo selLoginInfoByUid(UserSigninDto dto);
     UserInfoVo selUserInfo(UserInfoSelDto dto);
 }

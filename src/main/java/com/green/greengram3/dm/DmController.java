@@ -40,4 +40,11 @@ public class DmController {
     public ResVo delDmMsg(DmDelMsgDto dto) {
         return service.delDmMsg(dto);
     }
+
+    @Operation(summary = "dm방 생성")
+    @PostMapping
+    public DmSelVo postDm(@RequestBody DmInsDto dto){
+        log.info("dto : {}", dto);
+        return service.postDm(dto);
+    }
 }

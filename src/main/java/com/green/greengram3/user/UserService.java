@@ -28,7 +28,7 @@ public class UserService {
     }
 
     public UserSigninVo signin(UserSigninDto dto) {
-        UserSigninProcVo procVo = userMapper.selLoginInfoByUid(dto.getUid());
+        UserSigninProcVo procVo = userMapper.selLoginInfoByUid(dto);
         if (procVo == null) {
             return UserSigninVo.builder()
                     .result(Const.LOGIN_NO_UID)
