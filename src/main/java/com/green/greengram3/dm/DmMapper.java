@@ -14,4 +14,5 @@ public interface DmMapper {
     int insDm(DmInsDto dto);
     int insDmUser(DmInsDto dto);
     Integer checkDmExist(DmInsDto dto);
+    int updDmLastMsg();
 }

@@ -71,4 +71,10 @@
         WHERE A.iuser = #{loginedIuser}
         AND B.iuser = #{otherPersonIuser}
     </select>
+
+    <update id="updDmLastMsg">
+        UPDATE t_dm
+        SET last_msg = #{msg}
+        WHERE idm = #{imd}
+    </update>
 </mapper>
