@@ -1,6 +1,9 @@
 package com.green.greengram3.dm;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.firebase.messaging.FirebaseMessaging;
+import com.google.firebase.messaging.Message;
+import com.google.firebase.messaging.Notification;
 import com.green.greengram3.common.ResVo;
 import com.green.greengram3.dm.model.*;
 import com.green.greengram3.user.UserMapper;
@@ -24,7 +27,7 @@ import java.util.List;
 public class DmService {
     private final DmMapper mapper;
     private final UserMapper userMapper;
-    private final ObjectMapper objMapper
+    private final ObjectMapper objMapper;
 
     public List<DmSelMsgAllVo> getMsgAll(DmSelMsgDto dto) {
         return mapper.selDmMsgAll(dto);
@@ -89,14 +92,14 @@ public class DmService {
     public DmSelVo postDm(DmInsDto dto) {
         Integer existDmCheck = mapper.checkDmExist(dto);
         if (existDmCheck != null) {
-            DmSelDto selDto = new DmSelDto();
+            /*DmSelDto selDto = new DmSelDto();
             selDto.setLoginedIuser(dto.getLoginedIuser());
             List<DmSelVo> voList = mapper.selDmAll(selDto);
             for (DmSelVo vo : voList) {
                 if (vo.getOtherPersonIuser() == existDmCheck) {
                     return vo;
                 }
-            }
+            }*/return null;
         }
         int insDmResult = mapper.insDm(dto);
         /*if (insDmResult == 0) {
