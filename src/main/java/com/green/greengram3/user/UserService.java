@@ -61,4 +61,12 @@ public class UserService {
     public UserInfoVo getUserInfo(UserInfoSelDto dto){
         return userMapper.selUserInfo(dto);
     }
+
+    public ResVo patchUserFirebaseToken(UserFirebaseTokenPatchDto dto) {
+        return new ResVo(userMapper.updUserFirebaseToken(dto));
+    }
+
+    public ResVo patchUserPic(UserPicPatchDto dto) {
+        return new ResVo(userMapper.updUserPic(dto));
+    }
 }

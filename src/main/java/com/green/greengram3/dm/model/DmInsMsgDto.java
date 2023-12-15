@@ -9,5 +9,6 @@ public class DmInsMsgDto {
     @JsonIgnore
     private int seq;
     private int loginedIuser;
+    private String loginedPic;
     private String msg;
 }

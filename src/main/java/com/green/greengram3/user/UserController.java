@@ -34,9 +34,20 @@ public class UserController {
     public ResVo toggleFollow(@RequestBody UserFollowDto dto){
         return service.toggleFollow(dto);
     }
+
     @Operation(summary = "유저 프로필 정보")
     @GetMapping
     public UserInfoVo getUserInfo(UserInfoSelDto dto){
         return service.getUserInfo(dto);
+    }
+
+    @PatchMapping("/firebase-token")
+    public ResVo patchUserFirebaseToken(@RequestBody UserFirebaseTokenPatchDto dto) {
+        return service.patchUserFirebaseToken(dto);
+    }
+
+    @PatchMapping("/pic")
+    public ResVo patchUserPic(@RequestBody UserPicPatchDto dto) {
+        return service.patchUserPic(dto);
     }
 }
