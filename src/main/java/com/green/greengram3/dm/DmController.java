@@ -31,7 +31,7 @@ public class DmController {
     }
     @Operation(summary = "dm 메세지 작성")
     @PostMapping("/msg")
-    public ResVo postDmMsg(@RequestBody DmInsMsgDto dto){
+    public ResVo postDmMsg(@RequestBody DmMsgInsDto dto){
         return service.postDmMsg(dto);
     }
 

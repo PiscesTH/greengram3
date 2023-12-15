@@ -7,12 +7,12 @@ import java.util.List;
 
 @Mapper
 public interface DmMapper {
-    int insDmMsg(DmInsMsgDto dto);
+    int insDmMsg(DmMsgInsDto dto);
     List<DmSelMsgAllVo> selDmMsgAll(DmSelMsgDto dto);
     List<DmSelVo> selDmAll(DmSelDto dto);
     int delDmMsg(DmDelMsgDto dto);
     int insDm(DmInsDto dto);
     int insDmUser(DmInsDto dto);
     Integer checkDmExist(DmInsDto dto);
-    int updDmLastMsg();
+    int updDmLastMsg(DmMsgInsDto dto);
 }
