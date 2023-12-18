@@ -23,3 +23,67 @@
 [2023-12-18 11:48:13 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
 [2023-12-18 11:48:14 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
 [2023-12-18 11:48:14 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2023-12-18 11:54:20 INFO  main] [com.green.greengram3.feed.FeedFavMapperTest] Starting FeedFavMapperTest using Java 17.0.8.1 with PID 4936 (started by Administrator in D:\Students\kth\greengram3)
+[2023-12-18 11:54:20 INFO  main] [com.green.greengram3.feed.FeedFavMapperTest] No active profile set, falling back to 1 default profile: "default"
+[2023-12-18 11:54:21 INFO  main] [com.green.greengram3.feed.FeedFavMapperTest] Started FeedFavMapperTest in 0.884 seconds (process running for 1.598)
+[2023-12-18 11:54:21 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2023-12-18 11:54:21 INFO  main] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection org.mariadb.jdbc.Connection@36790bec
+[2023-12-18 11:54:21 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2023-12-18 11:54:22 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2023-12-18 11:54:22 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2023-12-18 11:55:23 INFO  main] [com.green.greengram3.feed.FeedFavMapperTest] Starting FeedFavMapperTest using Java 17.0.8.1 with PID 8712 (started by Administrator in D:\Students\kth\greengram3)
+[2023-12-18 11:55:23 INFO  main] [com.green.greengram3.feed.FeedFavMapperTest] No active profile set, falling back to 1 default profile: "default"
+[2023-12-18 11:55:23 INFO  main] [com.green.greengram3.feed.FeedFavMapperTest] Started FeedFavMapperTest in 0.876 seconds (process running for 1.596)
+[2023-12-18 11:55:23 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2023-12-18 11:55:23 INFO  main] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection org.mariadb.jdbc.Connection@36790bec
+[2023-12-18 11:55:23 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2023-12-18 11:55:24 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2023-12-18 11:55:24 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2023-12-18 12:10:51 INFO  main] [com.green.greengram3.feed.FeedFavMapperTest] Starting FeedFavMapperTest using Java 17.0.8.1 with PID 9032 (started by Administrator in D:\Students\kth\greengram3)
+[2023-12-18 12:10:51 INFO  main] [com.green.greengram3.feed.FeedFavMapperTest] No active profile set, falling back to 1 default profile: "default"
+[2023-12-18 12:10:52 INFO  main] [com.green.greengram3.feed.FeedFavMapperTest] Started FeedFavMapperTest in 0.88 seconds (process running for 1.777)
+[2023-12-18 12:10:52 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2023-12-18 12:10:52 INFO  main] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection org.mariadb.jdbc.Connection@77429040
+[2023-12-18 12:10:52 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2023-12-18 12:10:52 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2023-12-18 12:10:52 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2023-12-18 12:17:07 INFO  main] [com.green.greengram3.feed.FeedFavMapperTest] Starting FeedFavMapperTest using Java 17.0.8.1 with PID 5228 (started by Administrator in D:\Students\kth\greengram3)
+[2023-12-18 12:17:07 INFO  main] [com.green.greengram3.feed.FeedFavMapperTest] No active profile set, falling back to 1 default profile: "default"
+[2023-12-18 12:17:08 INFO  main] [com.green.greengram3.feed.FeedFavMapperTest] Started FeedFavMapperTest in 0.873 seconds (process running for 1.597)
+[2023-12-18 12:17:08 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2023-12-18 12:17:08 INFO  main] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection org.mariadb.jdbc.Connection@66383c29
+[2023-12-18 12:17:08 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2023-12-18 12:17:08 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2023-12-18 12:17:08 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2023-12-18 12:45:42 INFO  main] [com.green.greengram3.feed.FeedFavMapperTest] Starting FeedFavMapperTest using Java 17.0.8.1 with PID 9160 (started by Administrator in D:\Students\kth\greengram3)
+[2023-12-18 12:45:42 INFO  main] [com.green.greengram3.feed.FeedFavMapperTest] No active profile set, falling back to 1 default profile: "default"
+[2023-12-18 12:45:42 INFO  main] [com.green.greengram3.feed.FeedFavMapperTest] Started FeedFavMapperTest in 0.869 seconds (process running for 1.595)
+[2023-12-18 12:45:42 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2023-12-18 12:45:42 INFO  main] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection org.mariadb.jdbc.Connection@5f7eee96
+[2023-12-18 12:45:42 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2023-12-18 12:45:43 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2023-12-18 12:45:43 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2023-12-18 12:46:39 INFO  main] [com.green.greengram3.feed.FeedFavMapperTest] Starting FeedFavMapperTest using Java 17.0.8.1 with PID 5848 (started by Administrator in D:\Students\kth\greengram3)
+[2023-12-18 12:46:39 INFO  main] [com.green.greengram3.feed.FeedFavMapperTest] No active profile set, falling back to 1 default profile: "default"
+[2023-12-18 12:46:39 INFO  main] [com.green.greengram3.feed.FeedFavMapperTest] Started FeedFavMapperTest in 0.873 seconds (process running for 1.592)
+[2023-12-18 12:46:39 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2023-12-18 12:46:39 INFO  main] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection org.mariadb.jdbc.Connection@2272cbb0
+[2023-12-18 12:46:39 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2023-12-18 12:46:40 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2023-12-18 12:46:40 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2023-12-18 12:48:28 INFO  main] [com.green.greengram3.feed.FeedFavMapperTest] Starting FeedFavMapperTest using Java 17.0.8.1 with PID 1884 (started by Administrator in D:\Students\kth\greengram3)
+[2023-12-18 12:48:28 INFO  main] [com.green.greengram3.feed.FeedFavMapperTest] No active profile set, falling back to 1 default profile: "default"
+[2023-12-18 12:48:28 INFO  main] [com.green.greengram3.feed.FeedFavMapperTest] Started FeedFavMapperTest in 0.874 seconds (process running for 1.61)
+[2023-12-18 12:48:28 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2023-12-18 12:48:28 INFO  main] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection org.mariadb.jdbc.Connection@3a36cd5
+[2023-12-18 12:48:28 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2023-12-18 12:48:29 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2023-12-18 12:48:29 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2023-12-18 12:54:46 INFO  main] [com.green.greengram3.feed.FeedFavMapperTest] Starting FeedFavMapperTest using Java 17.0.8.1 with PID 1360 (started by Administrator in D:\Students\kth\greengram3)
+[2023-12-18 12:54:46 INFO  main] [com.green.greengram3.feed.FeedFavMapperTest] No active profile set, falling back to 1 default profile: "default"
+[2023-12-18 12:54:47 INFO  main] [com.green.greengram3.feed.FeedFavMapperTest] Started FeedFavMapperTest in 0.873 seconds (process running for 1.591)
+[2023-12-18 12:54:47 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2023-12-18 12:54:47 INFO  main] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection org.mariadb.jdbc.Connection@77d381e6
+[2023-12-18 12:54:47 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2023-12-18 12:54:48 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2023-12-18 12:54:48 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
