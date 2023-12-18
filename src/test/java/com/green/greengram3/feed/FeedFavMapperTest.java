@@ -27,9 +27,9 @@ class FeedFavMapperTest {
                 .build();
 
         int insResult = mapper.insFeedFav(dto);
-        assertEquals(1, insResult);
+        assertEquals(1, insResult, "첫 번째 테스트"); //테스트 실패하면 나오는 문자열 추가 가능
         List<FeedToggleFavDto> selResult = mapper.selFeedFavForTest(dto);
-        assertEquals(1,selResult.size());
+        assertEquals(1,selResult.size(), "두 번째 테스트");
     }
 
     @Test
