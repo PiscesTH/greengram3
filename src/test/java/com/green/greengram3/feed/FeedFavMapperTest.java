@@ -51,12 +51,13 @@ class FeedFavMapperTest {
     @Test
     @DisplayName("fav delete all test")
     public void delFeedFavAll() {
+        final int IFEED = 1;
         FeedToggleFavDto dto = FeedToggleFavDto.builder()
-                .ifeed(1)
+                .ifeed(IFEED)
                 .build();
 
         List<FeedToggleFavDto> selResult = mapper.selFeedFavForTest(dto);
-        int delAllResult = mapper.delFeedFavAll(1);
+        int delAllResult = mapper.delFeedFavAll(IFEED);
         assertEquals(selResult.size(), delAllResult);
 
         selResult = mapper.selFeedFavForTest(dto);
