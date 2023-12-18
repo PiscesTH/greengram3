@@ -1,9 +1,7 @@
 package com.green.greengram3;
 
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 public class Exam1 {    //클래스 실행하면 전수조사. 클래스 이름 자유
 
@@ -17,7 +15,7 @@ public class Exam1 {    //클래스 실행하면 전수조사. 클래스 이름 
     }
 
     @Test   //다양한 관점으로 테스트 하는걸 권장
-    public void test2() {   //메서드들은 각각 독립적. 순차적으로 실행되는 것은 아니다.
+    public void test2() {   //메서드들은 각각 독립적. 호출은 순서대로 ? 처리는 스레드로 동시에
         System.out.println("test2");
         int multi = 2 * 3;
         Assertions.assertEquals(6, multi);
@@ -38,4 +36,18 @@ public class Exam1 {    //클래스 실행하면 전수조사. 클래스 이름 
         Assertions.assertEquals(18, utils.multi(2, 9));
     }
 
+    @BeforeAll
+    public static void beforeTest() {
+        System.out.println("boforeAll");
+    }
+
+    @AfterAll
+    public static void afterTest() {
+        System.out.println("afterAll");
+    }
+
+    @BeforeEach
+    public void BETest() {
+        System.out.println("beforeEach");
+    }
 }
