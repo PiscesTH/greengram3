@@ -7,4 +7,5 @@ import org.apache.ibatis.annotations.Mapper;
 public interface FeedFavMapper {
     int insFeedFav(FeedToggleFavDto dto);
     int delFeedFav(FeedToggleFavDto dto);
+    FeedToggleFavDto selFeedFavForTest(FeedToggleFavDto dto);
 }

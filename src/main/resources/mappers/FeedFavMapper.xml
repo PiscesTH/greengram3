@@ -13,4 +13,10 @@
         DELETE FROM t_feed_fav
         WHERE (ifeed, iuser) = (#{ifeed}, #{iuser})
     </delete>
+
+    <select id="selFeedFavForTest">
+        SELECT ifeed, iuser
+        FROM t_feed_fav
+        WHERE (ifeed, iuser) = (#{ifeed}, #{iuser})
+    </select>
 </mapper>
