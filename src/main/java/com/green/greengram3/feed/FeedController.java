@@ -23,6 +23,7 @@ public class FeedController {
     @Operation(summary = "피드 등록")
     @PostMapping
     public ResVo postFeed(@RequestBody FeedInsDto dto) {
+        log.info("dto : {}:",dto);
         return service.postFeed(dto);
     }
 
