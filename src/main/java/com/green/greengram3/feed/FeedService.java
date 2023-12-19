@@ -29,11 +29,13 @@ public class FeedService {
                 .location(dto.getLocation())
                 .build();
         int feedResult = feedMapper.insFeed(pDto1);
+        log.info("feedResult : {}", feedResult);
         FeedInsPicDto pDto2 = FeedInsPicDto.builder()
                 .ifeed(pDto1.getIfeed())
                 .pics(dto.getPics())
                 .build();
         int picsResult = picsMapper.insPic(pDto2);
+        log.info("picsResult : {}", picsResult);
 
         return new ResVo(pDto1.getIfeed());
     }
