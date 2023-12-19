@@ -25,7 +25,7 @@ class FeedPicsMapperTest {
                 .pics(new ArrayList<>())
                 .build();
         dto.getPics().add("사진인척");
-        dto.getPics().add("사진인척2");
+        dto.getPics().add("사진인척22");
         List<Integer> ifeeds = new ArrayList<>();
         ifeeds.add(dto.getIfeed());
         List<FeedSelPicVo> beforeList = picsMapper.selPicsByIfeeds(ifeeds);
@@ -34,7 +34,7 @@ class FeedPicsMapperTest {
         List<FeedSelPicVo> afterList = picsMapper.selPicsByIfeeds(ifeeds);
         for (int i = 0; i < dto.getPics().size(); i++) {
             assertEquals(dto.getPics().get(i),
-                    afterList.get(beforeList.size()+i).getPic());
+                    afterList.get(beforeList.size() + i).getPic());
         }
     }
 
