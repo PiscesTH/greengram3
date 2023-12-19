@@ -11,9 +11,10 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;   //스태틱 메서드 이름만으로 사용 가능
 
-@MybatisTest    //Mybatis를 테스트 한다.
+@MybatisTest    //Mybatis를 테스트 한다. DAO 관련 xml, interface만 빈등록 해준다.
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
-//기존 데이터 베이스로 테스트 할 때 사용
+//기존 데이터 베이스로 테스트 할 때 사용. 없으면 H2 데이터 베이스 사용한다.
+
 class FeedFavMapperTest {
     @Autowired
     private FeedFavMapper mapper;
@@ -25,11 +26,12 @@ class FeedFavMapperTest {
                 .ifeed(20)
                 .iuser(10)
                 .build();
-
-        int insResult = mapper.insFeedFav(dto);
-        assertEquals(1, insResult, "첫 번째 테스트"); //테스트 실패하면 나오는 문자열 추가 가능
         List<FeedToggleFavDto> selResult = mapper.selFeedFavForTest(dto);
-        assertEquals(1,selResult.size(), "두 번째 테스트");
+        assertEquals(0, selResult.size(), "첫 번째 select 테스트");
+        int insResult = mapper.insFeedFav(dto);
+        assertEquals(1, insResult, "첫 번째 insert 테스트"); //테스트 실패하면 나오는 문자열 추가 가능
+        selResult = mapper.selFeedFavForTest(dto);
+        assertEquals(1, selResult.size(), "두 번째 select 테스트");
     }
 
     @Test
@@ -45,7 +47,7 @@ class FeedFavMapperTest {
         int delResult2 = mapper.delFeedFav(dto);
         assertEquals(0, delResult2);
         List<FeedToggleFavDto> selResult = mapper.selFeedFavForTest(dto);
-        assertEquals(0,selResult.size());
+        assertEquals(0, selResult.size());
     }
 
     @Test

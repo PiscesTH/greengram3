@@ -11,4 +11,5 @@ import java.util.List;
 public interface FeedPicsMapper {
     int insPic(FeedInsPicDto dto);
     List<FeedSelPicVo> selPicsByIfeeds(List<Integer> ifeeds);
+    int delFeedPics(int ifeed);
 }

@@ -50,4 +50,9 @@ public class Exam1 {    //클래스 실행하면 전수조사. 클래스 이름 
     public void BETest() {
         System.out.println("beforeEach");
     }
+
+    @AfterEach
+    public void AETest() {
+        System.out.println("afterEach");
+    }
 }
