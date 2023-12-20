@@ -22,7 +22,7 @@ class FeedServiceTest {
     private FeedMapper feedMapper;
     @MockBean   //서비스가 DI받는 것들 다 @MockBean으로 가상 주소값 받아와야 테스트 가능
     private FeedPicsMapper picsMapper;
-    @MockBean
+    @MockBean   //※ mock : 모조품
     private FeedFavMapper favMapper;
     @MockBean
     private FeedCommentMapper commentMapper;
