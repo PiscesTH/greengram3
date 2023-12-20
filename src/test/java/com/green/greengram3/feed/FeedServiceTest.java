@@ -2,12 +2,18 @@ package com.green.greengram3.feed;
 
 import com.green.greengram3.common.ResVo;
 import com.green.greengram3.feed.model.FeedInsDto;
+import com.green.greengram3.feed.model.FeedSelDto;
+import com.green.greengram3.feed.model.FeedSelVo;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
@@ -44,6 +50,32 @@ class FeedServiceTest {
 
     @Test
     void getAllFeed() {
+        FeedSelVo vo1 = new FeedSelVo();
+        vo1.setIfeed(1);
+        vo1.setContents("1번 피드");
+        FeedSelVo vo2 = new FeedSelVo();
+        vo2.setIfeed(2);
+        vo1.setContents("2번 피드");
+        List<FeedSelVo> list = new ArrayList<>();
+        list.add(vo1);
+        list.add(vo2);
+
+        when(feedMapper.selAllFeed(any())).thenReturn(list);
+
+        List<String> picsList = Arrays.stream(new String[]{"1.jpg", "2.jpg"}).toList();
+        when(picsMapper.selPicsByIfeeds(any())).thenReturn(any());
+        when(picsMapper.selPicsByIfeeds(any())).thenReturn(any());
+
+        FeedSelDto dto = new FeedSelDto();
+        List<FeedSelVo> result = feedMapper.selAllFeed(dto);
+
+        for (int i = 0; i < result.size(); i++) {
+            FeedSelVo rVo = result.get(i);
+            FeedSelVo pVo = list.get(i);
+
+            assertEquals(pVo.getIfeed(), rVo.getIfeed());
+            assertEquals(pVo.getContents(), rVo.getContents());
+        }
     }
 
     @Test
