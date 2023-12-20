@@ -3,6 +3,7 @@ package com.green.greengram3.feed;
 import com.green.greengram3.common.ResVo;
 import com.green.greengram3.feed.model.FeedInsDto;
 import com.green.greengram3.feed.model.FeedSelDto;
+import com.green.greengram3.feed.model.FeedSelPicVo;
 import com.green.greengram3.feed.model.FeedSelVo;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -22,6 +23,7 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(SpringExtension.class)  //스프링 객체화. 일부 테스트 할 때 사용 ? 필요한 것만 빈등록
+//스프링 컨테이너 올라오게끔
 @Import({FeedService.class})        //서비스만 빈 등록. 
 class FeedServiceTest {
     @MockBean   //가상의 객체(가짜)의 주소값 할당
@@ -55,27 +57,40 @@ class FeedServiceTest {
         vo1.setContents("1번 피드");
         FeedSelVo vo2 = new FeedSelVo();
         vo2.setIfeed(2);
-        vo1.setContents("2번 피드");
+        vo2.setContents("2번 피드");
         List<FeedSelVo> list = new ArrayList<>();
         list.add(vo1);
         list.add(vo2);
 
         when(feedMapper.selAllFeed(any())).thenReturn(list);
 
-        List<String> picsList = Arrays.stream(new String[]{"1.jpg", "2.jpg"}).toList();
-        when(picsMapper.selPicsByIfeeds(any())).thenReturn(any());
-        when(picsMapper.selPicsByIfeeds(any())).thenReturn(any());
+        FeedSelPicVo pvo1 = new FeedSelPicVo();
+        pvo1.setIfeed(1);
+        pvo1.setPic("1.jpg");
+        FeedSelPicVo pvo2 = new FeedSelPicVo();
+        pvo2.setIfeed(1);
+        pvo2.setPic("2.jpg");
+        FeedSelPicVo pvo3 = new FeedSelPicVo();
+        pvo3.setIfeed(2);
+        pvo3.setPic("A.jpg");
+        FeedSelPicVo pvo4 = new FeedSelPicVo();
+        pvo4.setIfeed(2);
+        pvo4.setPic("B.jpg");
+        List<FeedSelPicVo> picVoList = new ArrayList<>();
+        picVoList.add(pvo1);
+        picVoList.add(pvo2);
+        picVoList.add(pvo3);
+        picVoList.add(pvo4);
+
+        when(picsMapper.selPicsByIfeeds(any())).thenReturn(picVoList);
 
         FeedSelDto dto = new FeedSelDto();
-        List<FeedSelVo> result = feedMapper.selAllFeed(dto);
+        List<FeedSelVo> result = service.getAllFeed(dto);
 
-        for (int i = 0; i < result.size(); i++) {
-            FeedSelVo rVo = result.get(i);
-            FeedSelVo pVo = list.get(i);
+        assertEquals(list, result);
+        assertEquals(2,result.get(0).getPics().size());
+        assertTrue(result.get(0).getPics().contains(pvo1.getPic()));
 
-            assertEquals(pVo.getIfeed(), rVo.getIfeed());
-            assertEquals(pVo.getContents(), rVo.getContents());
-        }
     }
 
     @Test
