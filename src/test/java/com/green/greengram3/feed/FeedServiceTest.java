@@ -88,9 +88,12 @@ class FeedServiceTest {
         List<FeedSelVo> result = service.getAllFeed(dto);
 
         assertEquals(list, result);
-        assertEquals(2,result.get(0).getPics().size());
-        assertTrue(result.get(0).getPics().contains(pvo1.getPic()));
+//        assertEquals(2,result.get(0).getPics().size());
+//        assertTrue(result.get(0).getPics().contains(pvo1.getPic()));
 
+        for (FeedSelPicVo feedSelPicVo : picVoList) {
+            assertTrue(result.get(feedSelPicVo.getIfeed() - 1).getPics().contains(feedSelPicVo.getPic()));
+        }
     }
 
     @Test
