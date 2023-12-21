@@ -111,14 +111,12 @@ class FeedServiceTest {
         commentVoList2.add(commentVo4);
 
         FeedSelCommentDto commentDto1 = FeedSelCommentDto.builder()
-                .startIdx(0)
                 .ifeed(list.get(0).getIfeed())
                 .commentCnt(Const.MAX_COMMENT_COUNT)
                 .build();
         when(commentMapper.selFeedCommentAll(commentDto1)).thenReturn(commentVoList1);
 
         FeedSelCommentDto commentDto2 = FeedSelCommentDto.builder()
-                .startIdx(0)
                 .ifeed(list.get(1).getIfeed())
                 .commentCnt(Const.MAX_COMMENT_COUNT)
                 .build();
@@ -142,7 +140,11 @@ class FeedServiceTest {
             for (int i = 0; i < feed.getComments().size(); i++) {
                 assertEquals(commentVoList1.get(i), feed.getComments().get(i));
             }
+            System.out.println("성공");
         }
+        assertEquals(commentVoList1, result.get(0).getComments());
+        assertEquals(commentVoList2, result.get(1).getComments());
+        assertEquals(commentVoList2, commentVoList1);
         /*for (int i = 0; i < result.size(); i++) {
             assertEquals(3, result.get(i).getComments().size());
             for (int j = 0; j < result.get(i).getComments().size(); j++) {
