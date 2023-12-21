@@ -116,6 +116,7 @@ class FeedServiceTest {
                 .commentCnt(Const.MAX_COMMENT_COUNT)
                 .build();
         when(commentMapper.selFeedCommentAll(commentDto1)).thenReturn(commentVoList1);
+
         FeedSelCommentDto commentDto2 = FeedSelCommentDto.builder()
                 .startIdx(0)
                 .ifeed(list.get(1).getIfeed())
@@ -138,6 +139,7 @@ class FeedServiceTest {
             System.out.printf("%d번 피드 테스트\n", feed.getIfeed());
             assertEquals(3, feed.getComments().size());
             assertEquals(1, feed.getIsMoreComment());
+            assertEquals(3, commentVoList1.size());
             for (int i = 0; i < feed.getComments().size(); i++) {
                 assertEquals(commentVoList1.get(i), feed.getComments().get(i));
             }
