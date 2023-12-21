@@ -1,10 +1,8 @@
 package com.green.greengram3.feed;
 
+import com.green.greengram3.common.Const;
 import com.green.greengram3.common.ResVo;
-import com.green.greengram3.feed.model.FeedInsDto;
-import com.green.greengram3.feed.model.FeedSelDto;
-import com.green.greengram3.feed.model.FeedSelPicVo;
-import com.green.greengram3.feed.model.FeedSelVo;
+import com.green.greengram3.feed.model.*;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -82,7 +80,49 @@ class FeedServiceTest {
         picVoList.add(pvo3);
         picVoList.add(pvo4);
 
+        List<FeedSelVo>[] lists = new List[2];  //리스트를 아이템으로 가지는 배열
+        lists[0] = list;
+        lists[1] = list;
+
         when(picsMapper.selPicsByIfeeds(any())).thenReturn(picVoList);
+
+        List<FeedSelCommentVo> commentVoList1 = new ArrayList<>();
+        FeedSelCommentVo commentVo1 = new FeedSelCommentVo();
+        commentVo1.setIfeedComment(1);
+        commentVo1.setWriterIuser(3);
+        FeedSelCommentVo commentVo2 = new FeedSelCommentVo();
+        commentVo2.setIfeedComment(2);
+        commentVo2.setWriterIuser(4);
+        FeedSelCommentVo commentVo3 = new FeedSelCommentVo();
+        commentVo3.setIfeedComment(3);
+        commentVo3.setWriterIuser(5);
+        FeedSelCommentVo commentVo4 = new FeedSelCommentVo();
+        commentVo4.setIfeedComment(4);
+        commentVo4.setWriterIuser(6);
+        commentVoList1.add(commentVo1);
+        commentVoList1.add(commentVo2);
+        commentVoList1.add(commentVo3);
+        commentVoList1.add(commentVo4);
+
+        List<FeedSelCommentVo> commentVoList2 = new ArrayList<>();
+        commentVoList2.add(commentVo1);
+        commentVoList2.add(commentVo2);
+        commentVoList2.add(commentVo3);
+        commentVoList2.add(commentVo4);
+
+        FeedSelCommentDto commentDto1 = FeedSelCommentDto.builder()
+                .startIdx(0)
+                .ifeed(list.get(0).getIfeed())
+                .commentCnt(Const.MAX_COMMENT_COUNT)
+                .build();
+        when(commentMapper.selFeedCommentAll(commentDto1)).thenReturn(commentVoList1);
+        FeedSelCommentDto commentDto2 = FeedSelCommentDto.builder()
+                .startIdx(0)
+                .ifeed(list.get(1).getIfeed())
+                .commentCnt(Const.MAX_COMMENT_COUNT)
+                .build();
+        when(commentMapper.selFeedCommentAll(commentDto2)).thenReturn(commentVoList2);
+//        when(commentMapper.selFeedCommentAll(any())).thenReturn(commentVoList1);
 
         FeedSelDto dto = new FeedSelDto();
         List<FeedSelVo> result = service.getAllFeed(dto);
@@ -94,7 +134,23 @@ class FeedServiceTest {
         for (FeedSelPicVo feedSelPicVo : picVoList) {
             assertTrue(result.get(feedSelPicVo.getIfeed() - 1).getPics().contains(feedSelPicVo.getPic()));
         }
+        for (FeedSelVo feed : result) {
+            System.out.printf("%d번 피드 테스트\n", feed.getIfeed());
+            assertEquals(3, feed.getComments().size());
+            assertEquals(1, feed.getIsMoreComment());
+            for (int i = 0; i < feed.getComments().size(); i++) {
+                assertEquals(commentVoList1.get(i), feed.getComments().get(i));
+            }
+        }
+        /*for (int i = 0; i < result.size(); i++) {
+            assertEquals(3, result.get(i).getComments().size());
+            for (int j = 0; j < result.get(i).getComments().size(); j++) {
+                assertEquals(commentVoList.get(j), result.get(i).getComments().get(j));
+            }
+        }*/
+
     }
+
 
     @Test
     void toggleFeedFav() {
