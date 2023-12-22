@@ -84,6 +84,21 @@ class FeedControllerTest {
     }
 
     @Test
-    void delFeed() {
+    void delFeed() throws Exception {
+        MultiValueMap<String, String> params = new LinkedMultiValueMap<>();
+        params.add("ifeed", "1");
+        params.add("iuser", "2");
+
+        ResVo result = new ResVo(1);
+        given(service.delFeed(any())).willReturn(result);
+        mvc.perform(
+                        MockMvcRequestBuilders.delete("/api/feed")
+                                .params(params)
+                )
+                .andExpect(status().isOk())
+                .andExpect(content().string(mapper.writeValueAsString(result)))
+                .andDo(print());
+
+        verify(service).delFeed(any());
     }
 }
