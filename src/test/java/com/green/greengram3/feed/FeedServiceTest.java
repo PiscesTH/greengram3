@@ -104,11 +104,14 @@ class FeedServiceTest {
         commentVoList1.add(commentVo3);
         commentVoList1.add(commentVo4);
 
+        FeedSelCommentVo commentVo5 = new FeedSelCommentVo();
+        commentVo4.setIfeedComment(5);
+        commentVo4.setWriterIuser(7);
         List<FeedSelCommentVo> commentVoList2 = new ArrayList<>();
         commentVoList2.add(commentVo1);
-        commentVoList2.add(commentVo2);
-        commentVoList2.add(commentVo3);
-        commentVoList2.add(commentVo4);
+        commentVoList2.add(commentVo5);
+//        commentVoList2.add(commentVo3);
+//        commentVoList2.add(commentVo4);
 
         FeedSelCommentDto commentDto1 = FeedSelCommentDto.builder()
                 .ifeed(list.get(0).getIfeed())
@@ -135,23 +138,26 @@ class FeedServiceTest {
         }
         for (FeedSelVo feed : result) {
             System.out.printf("%d번 피드 테스트\n", feed.getIfeed());
-            assertEquals(3, feed.getComments().size());
-            assertEquals(1, feed.getIsMoreComment());
+            assertEquals(feed.getIfeed() == 1 ? 3 : 2, feed.getComments().size());
+            assertEquals(feed.getIfeed() == 1 ? 1 : 0, feed.getIsMoreComment());
             for (int i = 0; i < feed.getComments().size(); i++) {
-                assertEquals(commentVoList1.get(i), feed.getComments().get(i));
+                if (feed.getIfeed() == 1) {
+                    assertEquals(commentVoList1.get(i), feed.getComments().get(i));
+                    continue;
+                }
+                assertEquals(commentVoList2.get(i), feed.getComments().get(i));
+
             }
             System.out.println("성공");
         }
         assertEquals(commentVoList1, result.get(0).getComments());
         assertEquals(commentVoList2, result.get(1).getComments());
-        assertEquals(commentVoList2, commentVoList1);
         /*for (int i = 0; i < result.size(); i++) {
             assertEquals(3, result.get(i).getComments().size());
             for (int j = 0; j < result.get(i).getComments().size(); j++) {
                 assertEquals(commentVoList.get(j), result.get(i).getComments().get(j));
             }
         }*/
-
     }
 
 
