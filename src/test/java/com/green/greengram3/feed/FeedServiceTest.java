@@ -140,24 +140,9 @@ class FeedServiceTest {
             System.out.printf("%d번 피드 테스트\n", feed.getIfeed());
             assertEquals(feed.getIfeed() == 1 ? 3 : 2, feed.getComments().size());
             assertEquals(feed.getIfeed() == 1 ? 1 : 0, feed.getIsMoreComment());
-            for (int i = 0; i < feed.getComments().size(); i++) {
-                if (feed.getIfeed() == 1) {
-                    assertEquals(commentVoList1.get(i), feed.getComments().get(i));
-                    continue;
-                }
-                assertEquals(commentVoList2.get(i), feed.getComments().get(i));
-
-            }
+            assertEquals(feed.getIfeed() == 1 ? commentVoList1 : commentVoList2, feed.getComments());
             System.out.println("성공");
         }
-        assertEquals(commentVoList1, result.get(0).getComments());
-        assertEquals(commentVoList2, result.get(1).getComments());
-        /*for (int i = 0; i < result.size(); i++) {
-            assertEquals(3, result.get(i).getComments().size());
-            for (int j = 0; j < result.get(i).getComments().size(); j++) {
-                assertEquals(commentVoList.get(j), result.get(i).getComments().get(j));
-            }
-        }*/
     }
 
 
