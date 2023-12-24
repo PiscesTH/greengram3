@@ -11,17 +11,14 @@ import org.springframework.context.annotation.Import;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.assertArg;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-@ExtendWith(SpringExtension.class)  //스프링 객체화. 일부 테스트 할 때 사용 ? 필요한 것만 빈등록
-//스프링 컨테이너 올라오게끔
+@ExtendWith(SpringExtension.class)  //스프링 객체화. 테스트에 실행할 클래서 지정. 필요한 것만 빈등록
 @Import({FeedService.class})        //서비스만 빈 등록. 
 class FeedServiceTest {
     @MockBean   //가상의 객체(가짜)의 주소값 할당
@@ -38,13 +35,13 @@ class FeedServiceTest {
     @Test
     void postFeed() {
         when(feedMapper.insFeed(any())).thenReturn(1);  //특정 메서드가 호출되면 1 리턴
-        //가짜 빈에게 임무를 준다. 같은 느낌 ?
+        //객체가 특정 상황에서 해야하는 행위 지정
         when(picsMapper.insPic(any())).thenReturn(3);   //any() : 파라미터로 어떠한 값이 와도
 
         FeedInsDto dto = new FeedInsDto();
         ResVo vo = service.postFeed(dto);
 
-        verify(feedMapper).insFeed(any());  //메서드 실제로 호출했는지 확인
+        verify(feedMapper).insFeed(any());  //해당 객체의 메서드 실제로 호출했는지 확인
         verify(picsMapper).insPic(any());   //두번 호출하고 확인하면 에러 발생함
     }
 
@@ -80,8 +77,8 @@ class FeedServiceTest {
         picVoList.add(pvo3);
         picVoList.add(pvo4);
 
-        List<FeedSelVo>[] lists = new List[2];  //리스트를 아이템으로 가지는 배열
-        lists[0] = list;
+        List<FeedSelVo>[] lists = new List[2];  //리스트를 아이템으로 가지는 배열 만드는 법
+        lists[0] = list;    //리스트보단 배열이 처리속도가 빠르다.
         lists[1] = list;
 
         when(picsMapper.selPicsByIfeeds(any())).thenReturn(picVoList);
@@ -110,8 +107,6 @@ class FeedServiceTest {
         List<FeedSelCommentVo> commentVoList2 = new ArrayList<>();
         commentVoList2.add(commentVo1);
         commentVoList2.add(commentVo5);
-//        commentVoList2.add(commentVo3);
-//        commentVoList2.add(commentVo4);
 
         FeedSelCommentDto commentDto1 = FeedSelCommentDto.builder()
                 .ifeed(list.get(0).getIfeed())
@@ -124,14 +119,11 @@ class FeedServiceTest {
                 .commentCnt(Const.MAX_COMMENT_COUNT)
                 .build();
         when(commentMapper.selFeedCommentAll(commentDto2)).thenReturn(commentVoList2);
-//        when(commentMapper.selFeedCommentAll(any())).thenReturn(commentVoList1);
 
         FeedSelDto dto = new FeedSelDto();
         List<FeedSelVo> result = service.getAllFeed(dto);
 
         assertEquals(list, result);
-//        assertEquals(2,result.get(0).getPics().size());
-//        assertTrue(result.get(0).getPics().contains(pvo1.getPic()));
 
         for (FeedSelPicVo feedSelPicVo : picVoList) {
             assertTrue(result.get(feedSelPicVo.getIfeed() - 1).getPics().contains(feedSelPicVo.getPic()));
@@ -144,7 +136,6 @@ class FeedServiceTest {
             System.out.println("성공");
         }
     }
-
 
     @Test
     void toggleFeedFav() {

@@ -17,11 +17,9 @@ import org.springframework.util.MultiValueMap;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -30,8 +28,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 class FeedControllerTest {
 
     @Autowired
-    private MockMvc mvc;    //가상 신호 전송 ?
-    @MockBean
+    private MockMvc mvc;    //가상 신호 전송에 필요 ?
+    @MockBean   //컨트롤러에서 필요한 Bean객체에 대해 Mock 형태의 객체를 생성해줌.
     private FeedService service;
     @Autowired
     private ObjectMapper mapper;
@@ -45,15 +43,15 @@ class FeedControllerTest {
         //given : 세팅 / when : 실행 / then : 검증
         FeedInsDto dto = new FeedInsDto();
 
-        String json = mapper.writeValueAsString(dto);
+        String json = mapper.writeValueAsString(dto);   //dto객체를 json 형태의 스트링 값으로 변경
         System.out.println(json);
-        mvc.perform(
-                        MockMvcRequestBuilders.post("/api/feed") //통신 요청
+        mvc.perform(        //restAPI 테스트 환경을 만들어주는 역할
+                        MockMvcRequestBuilders.post("/api/feed") //post 통신 요청
                                 .contentType(MediaType.APPLICATION_JSON)    //헤더 부분. json 형식으로 설정
-                                .content(mapper.writeValueAsString(dto))    //바디 부분. json 형식으로 변환
+                                .content(mapper.writeValueAsString(dto))    //바디 부분. josn 형식의 문자열 데이터 담아줌.
                 )
                 .andExpect(status().isOk())     //status : 상태값. 통신 응답 결과
-                .andExpect(content().string(mapper.writeValueAsString(result))) //바디에 담긴 문자열이 기대한 값인가 ?
+                .andExpect(content().string(mapper.writeValueAsString(result))) //기대한 결과값인지 확인하는 메서드
                 .andDo(print());    //통신에 결과 출력 ?
 
         verify(service).postFeed(any());
@@ -93,7 +91,7 @@ class FeedControllerTest {
         given(service.delFeed(any())).willReturn(result);
         mvc.perform(
                         MockMvcRequestBuilders.delete("/api/feed")
-                                .params(params)
+                                .params(params)     //쿼리스트링 작성법. params() 없이 직접 쓸 수도 있다.
                 )
                 .andExpect(status().isOk())
                 .andExpect(content().string(mapper.writeValueAsString(result)))
