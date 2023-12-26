@@ -28,11 +28,11 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 class FeedControllerTest {
 
     @Autowired
-    private MockMvc mvc;    //가상 신호 전송에 필요 ?
+    private MockMvc mvc;    //가상 신호 전송에 필요 ? 포스트맨 역할
     @MockBean   //컨트롤러에서 필요한 Bean객체에 대해 Mock 형태의 객체를 생성해줌.
     private FeedService service;
     @Autowired
-    private ObjectMapper mapper;
+    private ObjectMapper mapper;    //객체를 제이슨 형태의 문자열로. 제이슨을 객체로 변환할 때 사용
 
     @Test
     void postFeed() throws Exception {
@@ -47,7 +47,7 @@ class FeedControllerTest {
         System.out.println(json);
         mvc.perform(        //restAPI 테스트 환경을 만들어주는 역할
                         MockMvcRequestBuilders.post("/api/feed") //post 통신 요청
-                                .contentType(MediaType.APPLICATION_JSON)    //헤더 부분. json 형식으로 설정
+                                .contentType(MediaType.APPLICATION_JSON)    //헤더 부분. json 형식으로 설정. 없으면 form 데이터 형식이 기본값
                                 .content(mapper.writeValueAsString(dto))    //바디 부분. josn 형식의 문자열 데이터 담아줌.
                 )
                 .andExpect(status().isOk())     //status : 상태값. 통신 응답 결과
