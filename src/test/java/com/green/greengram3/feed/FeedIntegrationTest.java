@@ -12,6 +12,7 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.junit.jupiter.api.Assertions.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -19,10 +20,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 public class FeedIntegrationTest extends BaseIntegrationTest {
 
     @Test
-    @Rollback(value = false)
     public void postFeed() throws Exception {
         FeedInsDto dto = new FeedInsDto();
-        dto.setIuser(5);
+        dto.setIuser(7);
         dto.setContents("통합 테스트 중");
         dto.setLocation("그린컴퓨터학원");
         List<String> pics = new ArrayList<>();
@@ -37,11 +37,13 @@ public class FeedIntegrationTest extends BaseIntegrationTest {
                                 .content(json)    //바디 부분. josn 형식의 문자열 데이터 담아줌.
                 )
                 .andExpect(status().isOk())     //status : 상태값. 통신 응답 결과
-                .andDo(print())    //통신에 결과 출력 ?
+                //.andDo(print())    //통신에 결과 출력 ?
                 .andReturn();
 
         String contents = mr.getResponse().getContentAsString();
-        ResVo resVo = om.convertValue(contents, ResVo.class);
-        ResVo resVo2 = om.readValue(contents, ResVo.class);
+        //ResVo resVo = om.convertValue(contents, ResVo.class);
+        ResVo resVo = om.readValue(contents, ResVo.class);
+
+        assertNotEquals(0, resVo.getResult());
     }
 }
