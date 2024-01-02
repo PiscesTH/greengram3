@@ -1,7 +1,21 @@
-[2023-12-26 10:09:21 INFO  main] [com.green.greengram3.feed.FeedControllerTest] Starting FeedControllerTest using Java 17.0.8.1 with PID 1908 (started by Administrator in D:\Students\kth\greengram3)
-[2023-12-26 10:09:21 INFO  main] [com.green.greengram3.feed.FeedControllerTest] No active profile set, falling back to 1 default profile: "default"
-[2023-12-26 10:09:22 INFO  main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2023-12-26 10:09:22 INFO  main] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
-[2023-12-26 10:09:22 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
-[2023-12-26 10:09:22 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
-[2023-12-26 10:09:22 INFO  main] [com.green.greengram3.feed.FeedControllerTest] Started FeedControllerTest in 1.856 seconds (process running for 2.731)
+[2024-01-02 11:11:34 INFO  main] [com.green.greengram3.feed.FeedControllerTest] Starting FeedControllerTest using Java 17.0.8.1 with PID 3168 (started by Administrator in D:\Students\kth\greengram3)
+[2024-01-02 11:11:34 INFO  main] [com.green.greengram3.feed.FeedControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-01-02 11:11:35 INFO  main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-01-02 11:11:35 INFO  main] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-01-02 11:11:35 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-01-02 11:11:35 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-01-02 11:11:35 INFO  main] [com.green.greengram3.feed.FeedControllerTest] Started FeedControllerTest in 1.717 seconds (process running for 2.496)
+[2024-01-02 11:11:50 INFO  main] [com.green.greengram3.feed.FeedControllerTest] Starting FeedControllerTest using Java 17.0.8.1 with PID 5288 (started by Administrator in D:\Students\kth\greengram3)
+[2024-01-02 11:11:50 INFO  main] [com.green.greengram3.feed.FeedControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-01-02 11:11:51 INFO  main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-01-02 11:11:51 INFO  main] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-01-02 11:11:51 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-01-02 11:11:51 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-01-02 11:11:51 INFO  main] [com.green.greengram3.feed.FeedControllerTest] Started FeedControllerTest in 1.631 seconds (process running for 2.384)
+[2024-01-02 11:14:07 INFO  main] [com.green.greengram3.feed.FeedControllerTest] Starting FeedControllerTest using Java 17.0.8.1 with PID 2428 (started by Administrator in D:\Students\kth\greengram3)
+[2024-01-02 11:14:07 INFO  main] [com.green.greengram3.feed.FeedControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-01-02 11:14:08 INFO  main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-01-02 11:14:08 INFO  main] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-01-02 11:14:08 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-01-02 11:14:08 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-01-02 11:14:08 INFO  main] [com.green.greengram3.feed.FeedControllerTest] Started FeedControllerTest in 1.635 seconds (process running for 2.393)

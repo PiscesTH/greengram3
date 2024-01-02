@@ -15,7 +15,7 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @AutoConfigureMockMvc
 @Import({MockMvcConfig.MockMvc.class})
-@interface MockMvcConfig {
+public @interface MockMvcConfig {
 
     class MockMvc {
         @Bean
