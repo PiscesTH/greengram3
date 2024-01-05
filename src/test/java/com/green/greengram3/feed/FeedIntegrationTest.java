@@ -2,15 +2,20 @@ package com.green.greengram3.feed;
 
 import com.green.greengram3.BaseIntegrationTest;
 import com.green.greengram3.common.ResVo;
+import com.green.greengram3.feed.model.FeedDelDto;
 import com.green.greengram3.feed.model.FeedInsDto;
 import org.junit.jupiter.api.Test;
 import org.springframework.http.MediaType;
 import org.springframework.test.annotation.Rollback;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
@@ -37,7 +42,7 @@ public class FeedIntegrationTest extends BaseIntegrationTest {
                                 .content(json)    //바디 부분. josn 형식의 문자열 데이터 담아줌.
                 )
                 .andExpect(status().isOk())     //status : 상태값. 통신 응답 결과
-                //.andDo(print())    //통신에 결과 출력 ?
+                //.andDo(print())    //통신 결과 출력
                 .andReturn();
 
         String contents = mr.getResponse().getContentAsString();
@@ -45,5 +50,24 @@ public class FeedIntegrationTest extends BaseIntegrationTest {
         ResVo resVo = om.readValue(contents, ResVo.class);
 
         assertNotEquals(0, resVo.getResult());
+    }
+
+    @Test
+    @Rollback(value = false)
+    public void delFeed() throws Exception {
+        MultiValueMap<String, String> params = new LinkedMultiValueMap<>();
+        params.add("ifeed", "117");
+        params.add("iuser", "7");
+        MvcResult mr = mvc.perform(
+                        //MockMvcRequestBuilders.delete("/api/feed?ifeed={ifeed}&iuser={iuser}","117","7")  //쿼리스트링 작성법
+                        MockMvcRequestBuilders.delete("/api/feed")
+                                .params(params)
+                )
+                .andExpect(status().isOk())
+                .andReturn();
+
+        String contents = mr.getResponse().getContentAsString();
+        ResVo resVo = om.readValue(contents, ResVo.class);
+        assertEquals(1, resVo.getResult());
     }
 }

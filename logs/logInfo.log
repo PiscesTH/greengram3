@@ -1,343 +1,400 @@
-[2024-01-02 11:11:34 INFO  main] [com.green.greengram3.feed.FeedControllerTest] Starting FeedControllerTest using Java 17.0.8.1 with PID 3168 (started by Administrator in D:\Students\kth\greengram3)
-[2024-01-02 11:11:34 INFO  main] [com.green.greengram3.feed.FeedControllerTest] No active profile set, falling back to 1 default profile: "default"
-[2024-01-02 11:11:35 INFO  main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-01-02 11:11:35 INFO  main] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
-[2024-01-02 11:11:35 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
-[2024-01-02 11:11:35 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
-[2024-01-02 11:11:35 INFO  main] [com.green.greengram3.feed.FeedControllerTest] Started FeedControllerTest in 1.717 seconds (process running for 2.496)
-[2024-01-02 11:11:50 INFO  main] [com.green.greengram3.feed.FeedControllerTest] Starting FeedControllerTest using Java 17.0.8.1 with PID 5288 (started by Administrator in D:\Students\kth\greengram3)
-[2024-01-02 11:11:50 INFO  main] [com.green.greengram3.feed.FeedControllerTest] No active profile set, falling back to 1 default profile: "default"
-[2024-01-02 11:11:51 INFO  main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-01-02 11:11:51 INFO  main] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
-[2024-01-02 11:11:51 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
-[2024-01-02 11:11:51 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
-[2024-01-02 11:11:51 INFO  main] [com.green.greengram3.feed.FeedControllerTest] Started FeedControllerTest in 1.631 seconds (process running for 2.384)
-[2024-01-02 11:14:07 INFO  main] [com.green.greengram3.feed.FeedControllerTest] Starting FeedControllerTest using Java 17.0.8.1 with PID 2428 (started by Administrator in D:\Students\kth\greengram3)
-[2024-01-02 11:14:07 INFO  main] [com.green.greengram3.feed.FeedControllerTest] No active profile set, falling back to 1 default profile: "default"
-[2024-01-02 11:14:08 INFO  main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-01-02 11:14:08 INFO  main] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
-[2024-01-02 11:14:08 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
-[2024-01-02 11:14:08 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
-[2024-01-02 11:14:08 INFO  main] [com.green.greengram3.feed.FeedControllerTest] Started FeedControllerTest in 1.635 seconds (process running for 2.393)
-[2024-01-02 13:00:08 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Starting FeedIntegrationTest using Java 17.0.8.1 with PID 9168 (started by Administrator in D:\Students\kth\greengram3)
-[2024-01-02 13:00:08 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] No active profile set, falling back to 1 default profile: "default"
-[2024-01-02 13:00:09 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 0 (http)
-[2024-01-02 13:00:09 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-auto-1"]
-[2024-01-02 13:00:09 INFO  main] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
-[2024-01-02 13:00:09 INFO  main] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.16]
-[2024-01-02 13:00:09 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
-[2024-01-02 13:00:09 INFO  main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 879 ms
-[2024-01-02 13:00:09 INFO  main] [com.green.greengram3.common.FirebaseConfiguration] FirebaseApp Initialization Complete !!!
-[2024-01-02 13:00:10 INFO  main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-01-02 13:00:10 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring TestDispatcherServlet ''
-[2024-01-02 13:00:10 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
-[2024-01-02 13:00:10 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
-[2024-01-02 13:00:10 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-auto-1"]
-[2024-01-02 13:00:10 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 51330 (http) with context path ''
-[2024-01-02 13:00:10 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Started FeedIntegrationTest in 1.915 seconds (process running for 2.729)
-[2024-01-02 13:00:10 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
-[2024-01-02 13:00:10 INFO  main] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection org.mariadb.jdbc.Connection@12421766
-[2024-01-02 13:00:10 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
-[2024-01-02 13:00:11 INFO  main] [com.green.greengram3.feed.FeedService] feedResult : 1
-[2024-01-02 13:00:11 INFO  main] [com.green.greengram3.feed.FeedService] picsResult : 2
-[2024-01-02 13:00:11 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
-[2024-01-02 13:00:11 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
-[2024-01-02 13:02:06 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Starting FeedIntegrationTest using Java 17.0.8.1 with PID 4184 (started by Administrator in D:\Students\kth\greengram3)
-[2024-01-02 13:02:06 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] No active profile set, falling back to 1 default profile: "default"
-[2024-01-02 13:02:07 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 0 (http)
-[2024-01-02 13:02:07 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-auto-1"]
-[2024-01-02 13:02:07 INFO  main] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
-[2024-01-02 13:02:07 INFO  main] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.16]
-[2024-01-02 13:02:07 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
-[2024-01-02 13:02:07 INFO  main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 923 ms
-[2024-01-02 13:02:07 INFO  main] [com.green.greengram3.common.FirebaseConfiguration] FirebaseApp Initialization Complete !!!
-[2024-01-02 13:02:08 INFO  main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-01-02 13:02:08 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring TestDispatcherServlet ''
-[2024-01-02 13:02:08 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
-[2024-01-02 13:02:08 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
-[2024-01-02 13:02:08 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-auto-1"]
-[2024-01-02 13:02:08 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 51354 (http) with context path ''
-[2024-01-02 13:02:08 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Started FeedIntegrationTest in 1.954 seconds (process running for 2.794)
-[2024-01-02 13:02:08 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
-[2024-01-02 13:02:08 INFO  main] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection org.mariadb.jdbc.Connection@41026e5c
-[2024-01-02 13:02:08 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
-[2024-01-02 13:02:09 INFO  main] [com.green.greengram3.feed.FeedService] feedResult : 1
-[2024-01-02 13:02:09 INFO  main] [com.green.greengram3.feed.FeedService] picsResult : 2
-[2024-01-02 13:02:09 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
-[2024-01-02 13:02:09 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
-[2024-01-02 13:04:10 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Starting FeedIntegrationTest using Java 17.0.8.1 with PID 8992 (started by Administrator in D:\Students\kth\greengram3)
-[2024-01-02 13:04:10 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] No active profile set, falling back to 1 default profile: "default"
-[2024-01-02 13:04:11 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 0 (http)
-[2024-01-02 13:04:11 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-auto-1"]
-[2024-01-02 13:04:11 INFO  main] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
-[2024-01-02 13:04:11 INFO  main] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.16]
-[2024-01-02 13:04:11 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
-[2024-01-02 13:04:11 INFO  main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 869 ms
-[2024-01-02 13:04:11 INFO  main] [com.green.greengram3.common.FirebaseConfiguration] FirebaseApp Initialization Complete !!!
-[2024-01-02 13:04:11 INFO  main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-01-02 13:04:11 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring TestDispatcherServlet ''
-[2024-01-02 13:04:11 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
-[2024-01-02 13:04:11 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
-[2024-01-02 13:04:12 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-auto-1"]
-[2024-01-02 13:04:12 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 51374 (http) with context path ''
-[2024-01-02 13:04:12 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Started FeedIntegrationTest in 1.875 seconds (process running for 2.691)
-[2024-01-02 13:04:12 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
-[2024-01-02 13:04:12 INFO  main] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection org.mariadb.jdbc.Connection@2e44cb34
-[2024-01-02 13:04:12 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
-[2024-01-02 13:04:12 INFO  main] [com.green.greengram3.feed.FeedService] feedResult : 1
-[2024-01-02 13:04:12 INFO  main] [com.green.greengram3.feed.FeedService] picsResult : 2
-[2024-01-02 13:04:12 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
-[2024-01-02 13:04:12 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
-[2024-01-02 13:05:06 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Starting FeedIntegrationTest using Java 17.0.8.1 with PID 5484 (started by Administrator in D:\Students\kth\greengram3)
-[2024-01-02 13:05:06 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] No active profile set, falling back to 1 default profile: "default"
-[2024-01-02 13:05:07 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 0 (http)
-[2024-01-02 13:05:07 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-auto-1"]
-[2024-01-02 13:05:07 INFO  main] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
-[2024-01-02 13:05:07 INFO  main] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.16]
-[2024-01-02 13:05:07 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
-[2024-01-02 13:05:07 INFO  main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 889 ms
-[2024-01-02 13:05:07 INFO  main] [com.green.greengram3.common.FirebaseConfiguration] FirebaseApp Initialization Complete !!!
-[2024-01-02 13:05:07 INFO  main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-01-02 13:05:08 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring TestDispatcherServlet ''
-[2024-01-02 13:05:08 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
-[2024-01-02 13:05:08 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
-[2024-01-02 13:05:08 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-auto-1"]
-[2024-01-02 13:05:08 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 51393 (http) with context path ''
-[2024-01-02 13:05:08 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Started FeedIntegrationTest in 1.896 seconds (process running for 2.666)
-[2024-01-02 13:05:08 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
-[2024-01-02 13:05:08 INFO  main] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection org.mariadb.jdbc.Connection@731e0bff
-[2024-01-02 13:05:08 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
-[2024-01-02 13:05:08 INFO  main] [com.green.greengram3.feed.FeedService] feedResult : 1
-[2024-01-02 13:05:08 INFO  main] [com.green.greengram3.feed.FeedService] picsResult : 2
-[2024-01-02 13:05:08 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
-[2024-01-02 13:05:08 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
-[2024-01-02 13:05:21 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Starting FeedIntegrationTest using Java 17.0.8.1 with PID 264 (started by Administrator in D:\Students\kth\greengram3)
-[2024-01-02 13:05:21 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] No active profile set, falling back to 1 default profile: "default"
-[2024-01-02 13:05:22 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 0 (http)
-[2024-01-02 13:05:22 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-auto-1"]
-[2024-01-02 13:05:22 INFO  main] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
-[2024-01-02 13:05:22 INFO  main] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.16]
-[2024-01-02 13:05:22 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
-[2024-01-02 13:05:22 INFO  main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 874 ms
-[2024-01-02 13:05:22 INFO  main] [com.green.greengram3.common.FirebaseConfiguration] FirebaseApp Initialization Complete !!!
-[2024-01-02 13:05:22 INFO  main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-01-02 13:05:23 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring TestDispatcherServlet ''
-[2024-01-02 13:05:23 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
-[2024-01-02 13:05:23 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
-[2024-01-02 13:05:23 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-auto-1"]
-[2024-01-02 13:05:23 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 51409 (http) with context path ''
-[2024-01-02 13:05:23 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Started FeedIntegrationTest in 1.883 seconds (process running for 2.683)
-[2024-01-02 13:05:23 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
-[2024-01-02 13:05:23 INFO  main] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection org.mariadb.jdbc.Connection@41026e5c
-[2024-01-02 13:05:23 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
-[2024-01-02 13:05:23 INFO  main] [com.green.greengram3.feed.FeedService] feedResult : 1
-[2024-01-02 13:05:23 INFO  main] [com.green.greengram3.feed.FeedService] picsResult : 2
-[2024-01-02 13:05:24 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
-[2024-01-02 13:05:24 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
-[2024-01-02 13:06:04 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Starting FeedIntegrationTest using Java 17.0.8.1 with PID 3284 (started by Administrator in D:\Students\kth\greengram3)
-[2024-01-02 13:06:04 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] No active profile set, falling back to 1 default profile: "default"
-[2024-01-02 13:06:05 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 0 (http)
-[2024-01-02 13:06:05 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-auto-1"]
-[2024-01-02 13:06:05 INFO  main] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
-[2024-01-02 13:06:05 INFO  main] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.16]
-[2024-01-02 13:06:05 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
-[2024-01-02 13:06:05 INFO  main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 913 ms
-[2024-01-02 13:06:05 INFO  main] [com.green.greengram3.common.FirebaseConfiguration] FirebaseApp Initialization Complete !!!
-[2024-01-02 13:06:06 INFO  main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-01-02 13:06:06 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring TestDispatcherServlet ''
-[2024-01-02 13:06:06 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
-[2024-01-02 13:06:06 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
-[2024-01-02 13:06:06 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-auto-1"]
-[2024-01-02 13:06:06 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 51431 (http) with context path ''
-[2024-01-02 13:06:06 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Started FeedIntegrationTest in 1.977 seconds (process running for 2.767)
-[2024-01-02 13:06:06 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
-[2024-01-02 13:06:06 INFO  main] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection org.mariadb.jdbc.Connection@6408be5
-[2024-01-02 13:06:06 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
-[2024-01-02 13:06:07 INFO  main] [com.green.greengram3.feed.FeedService] feedResult : 1
-[2024-01-02 13:06:07 INFO  main] [com.green.greengram3.feed.FeedService] picsResult : 2
-[2024-01-02 13:06:07 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
-[2024-01-02 13:06:07 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
-[2024-01-02 13:06:38 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Starting FeedIntegrationTest using Java 17.0.8.1 with PID 7904 (started by Administrator in D:\Students\kth\greengram3)
-[2024-01-02 13:06:38 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] No active profile set, falling back to 1 default profile: "default"
-[2024-01-02 13:06:39 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 0 (http)
-[2024-01-02 13:06:39 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-auto-1"]
-[2024-01-02 13:06:39 INFO  main] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
-[2024-01-02 13:06:39 INFO  main] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.16]
-[2024-01-02 13:06:39 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
-[2024-01-02 13:06:39 INFO  main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 887 ms
-[2024-01-02 13:06:39 INFO  main] [com.green.greengram3.common.FirebaseConfiguration] FirebaseApp Initialization Complete !!!
-[2024-01-02 13:06:39 INFO  main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-01-02 13:06:40 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring TestDispatcherServlet ''
-[2024-01-02 13:06:40 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
-[2024-01-02 13:06:40 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
-[2024-01-02 13:06:40 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-auto-1"]
-[2024-01-02 13:06:40 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 51446 (http) with context path ''
-[2024-01-02 13:06:40 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Started FeedIntegrationTest in 1.889 seconds (process running for 2.66)
-[2024-01-02 13:06:40 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
-[2024-01-02 13:06:40 INFO  main] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection org.mariadb.jdbc.Connection@1e57b783
-[2024-01-02 13:06:40 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
-[2024-01-02 13:06:40 INFO  main] [com.green.greengram3.feed.FeedService] feedResult : 1
-[2024-01-02 13:06:40 INFO  main] [com.green.greengram3.feed.FeedService] picsResult : 2
-[2024-01-02 13:06:41 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
-[2024-01-02 13:06:41 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
-[2024-01-02 13:14:34 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Starting FeedIntegrationTest using Java 17.0.8.1 with PID 8024 (started by Administrator in D:\Students\kth\greengram3)
-[2024-01-02 13:14:34 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] No active profile set, falling back to 1 default profile: "default"
-[2024-01-02 13:14:35 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 0 (http)
-[2024-01-02 13:14:35 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-auto-1"]
-[2024-01-02 13:14:35 INFO  main] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
-[2024-01-02 13:14:35 INFO  main] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.16]
-[2024-01-02 13:14:35 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
-[2024-01-02 13:14:35 INFO  main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 898 ms
-[2024-01-02 13:14:35 INFO  main] [com.green.greengram3.common.FirebaseConfiguration] FirebaseApp Initialization Complete !!!
-[2024-01-02 13:14:36 INFO  main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-01-02 13:14:36 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring TestDispatcherServlet ''
-[2024-01-02 13:14:36 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
-[2024-01-02 13:14:36 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
-[2024-01-02 13:14:36 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-auto-1"]
-[2024-01-02 13:14:36 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 51535 (http) with context path ''
-[2024-01-02 13:14:36 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Started FeedIntegrationTest in 1.901 seconds (process running for 2.772)
-[2024-01-02 13:14:36 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
-[2024-01-02 13:14:36 INFO  main] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection org.mariadb.jdbc.Connection@65503a26
-[2024-01-02 13:14:36 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
-[2024-01-02 13:14:37 INFO  main] [com.green.greengram3.feed.FeedService] feedResult : 1
-[2024-01-02 13:14:37 INFO  main] [com.green.greengram3.feed.FeedService] picsResult : 2
-[2024-01-02 13:14:37 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
-[2024-01-02 13:14:37 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
-[2024-01-02 15:45:14 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Starting FeedIntegrationTest using Java 17.0.8.1 with PID 11024 (started by Administrator in D:\Students\kth\greengram3)
-[2024-01-02 15:45:14 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] No active profile set, falling back to 1 default profile: "default"
-[2024-01-02 15:45:15 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 0 (http)
-[2024-01-02 15:45:15 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-auto-1"]
-[2024-01-02 15:45:15 INFO  main] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
-[2024-01-02 15:45:15 INFO  main] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.16]
-[2024-01-02 15:45:15 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
-[2024-01-02 15:45:15 INFO  main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 893 ms
-[2024-01-02 15:45:15 INFO  main] [com.green.greengram3.common.FirebaseConfiguration] FirebaseApp Initialization Complete !!!
-[2024-01-02 15:45:16 INFO  main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-01-02 15:45:16 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring TestDispatcherServlet ''
-[2024-01-02 15:45:16 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
-[2024-01-02 15:45:16 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
-[2024-01-02 15:45:16 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-auto-1"]
-[2024-01-02 15:45:16 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 52497 (http) with context path ''
-[2024-01-02 15:45:16 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Started FeedIntegrationTest in 1.895 seconds (process running for 2.685)
-[2024-01-02 15:45:16 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
-[2024-01-02 15:45:16 INFO  main] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection org.mariadb.jdbc.Connection@2bd2430f
-[2024-01-02 15:45:16 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
-[2024-01-02 15:45:17 INFO  main] [com.green.greengram3.feed.FeedService] feedResult : 1
-[2024-01-02 15:45:17 INFO  main] [com.green.greengram3.feed.FeedService] picsResult : 2
-[2024-01-02 15:45:17 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
-[2024-01-02 15:45:17 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
-[2024-01-02 15:47:21 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Starting FeedIntegrationTest using Java 17.0.8.1 with PID 10016 (started by Administrator in D:\Students\kth\greengram3)
-[2024-01-02 15:47:21 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] No active profile set, falling back to 1 default profile: "default"
-[2024-01-02 15:47:21 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 0 (http)
-[2024-01-02 15:47:21 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-auto-1"]
-[2024-01-02 15:47:21 INFO  main] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
-[2024-01-02 15:47:21 INFO  main] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.16]
-[2024-01-02 15:47:21 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
-[2024-01-02 15:47:21 INFO  main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 866 ms
-[2024-01-02 15:47:22 INFO  main] [com.green.greengram3.common.FirebaseConfiguration] FirebaseApp Initialization Complete !!!
-[2024-01-02 15:47:22 INFO  main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-01-02 15:47:22 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring TestDispatcherServlet ''
-[2024-01-02 15:47:22 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
-[2024-01-02 15:47:22 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
-[2024-01-02 15:47:22 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-auto-1"]
-[2024-01-02 15:47:22 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 52527 (http) with context path ''
-[2024-01-02 15:47:22 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Started FeedIntegrationTest in 1.859 seconds (process running for 2.661)
-[2024-01-02 15:47:22 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
-[2024-01-02 15:47:22 INFO  main] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection org.mariadb.jdbc.Connection@5600a278
-[2024-01-02 15:47:22 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
-[2024-01-02 15:47:23 INFO  main] [com.green.greengram3.feed.FeedService] feedResult : 1
-[2024-01-02 15:47:23 INFO  main] [com.green.greengram3.feed.FeedService] picsResult : 2
-[2024-01-02 15:47:23 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
-[2024-01-02 15:47:23 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
-[2024-01-02 15:47:52 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Starting FeedIntegrationTest using Java 17.0.8.1 with PID 7724 (started by Administrator in D:\Students\kth\greengram3)
-[2024-01-02 15:47:52 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] No active profile set, falling back to 1 default profile: "default"
-[2024-01-02 15:47:53 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 0 (http)
-[2024-01-02 15:47:53 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-auto-1"]
-[2024-01-02 15:47:53 INFO  main] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
-[2024-01-02 15:47:53 INFO  main] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.16]
-[2024-01-02 15:47:53 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
-[2024-01-02 15:47:53 INFO  main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 867 ms
-[2024-01-02 15:47:53 INFO  main] [com.green.greengram3.common.FirebaseConfiguration] FirebaseApp Initialization Complete !!!
-[2024-01-02 15:47:53 INFO  main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-01-02 15:47:54 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring TestDispatcherServlet ''
-[2024-01-02 15:47:54 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
-[2024-01-02 15:47:54 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
-[2024-01-02 15:47:54 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-auto-1"]
-[2024-01-02 15:47:54 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 52543 (http) with context path ''
-[2024-01-02 15:47:54 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Started FeedIntegrationTest in 1.859 seconds (process running for 2.656)
-[2024-01-02 15:47:54 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
-[2024-01-02 15:47:54 INFO  main] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection org.mariadb.jdbc.Connection@41026e5c
-[2024-01-02 15:47:54 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
-[2024-01-02 15:47:54 INFO  main] [com.green.greengram3.feed.FeedService] feedResult : 1
-[2024-01-02 15:47:54 INFO  main] [com.green.greengram3.feed.FeedService] picsResult : 2
-[2024-01-02 15:47:55 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
-[2024-01-02 15:47:55 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
-[2024-01-02 15:54:54 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Starting FeedIntegrationTest using Java 17.0.8.1 with PID 5564 (started by Administrator in D:\Students\kth\greengram3)
-[2024-01-02 15:54:54 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] No active profile set, falling back to 1 default profile: "default"
-[2024-01-02 15:54:55 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 0 (http)
-[2024-01-02 15:54:55 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-auto-1"]
-[2024-01-02 15:54:55 INFO  main] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
-[2024-01-02 15:54:55 INFO  main] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.16]
-[2024-01-02 15:54:55 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
-[2024-01-02 15:54:55 INFO  main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 890 ms
-[2024-01-02 15:54:55 INFO  main] [com.green.greengram3.common.FirebaseConfiguration] FirebaseApp Initialization Complete !!!
-[2024-01-02 15:54:56 INFO  main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-01-02 15:54:56 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring TestDispatcherServlet ''
-[2024-01-02 15:54:56 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
-[2024-01-02 15:54:56 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
-[2024-01-02 15:54:56 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-auto-1"]
-[2024-01-02 15:54:56 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 52632 (http) with context path ''
-[2024-01-02 15:54:56 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Started FeedIntegrationTest in 1.881 seconds (process running for 2.809)
-[2024-01-02 15:54:56 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
-[2024-01-02 15:54:56 INFO  main] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection org.mariadb.jdbc.Connection@73b8ab2c
-[2024-01-02 15:54:56 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
-[2024-01-02 15:54:57 INFO  main] [com.green.greengram3.feed.FeedService] feedResult : 1
-[2024-01-02 15:54:57 INFO  main] [com.green.greengram3.feed.FeedService] picsResult : 2
-[2024-01-02 15:54:57 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
-[2024-01-02 15:54:57 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
-[2024-01-02 15:56:27 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Starting FeedIntegrationTest using Java 17.0.8.1 with PID 10036 (started by Administrator in D:\Students\kth\greengram3)
-[2024-01-02 15:56:27 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] No active profile set, falling back to 1 default profile: "default"
-[2024-01-02 15:56:28 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 0 (http)
-[2024-01-02 15:56:28 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-auto-1"]
-[2024-01-02 15:56:28 INFO  main] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
-[2024-01-02 15:56:28 INFO  main] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.16]
-[2024-01-02 15:56:28 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
-[2024-01-02 15:56:28 INFO  main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 863 ms
-[2024-01-02 15:56:28 INFO  main] [com.green.greengram3.common.FirebaseConfiguration] FirebaseApp Initialization Complete !!!
-[2024-01-02 15:56:29 INFO  main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-01-02 15:56:29 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring TestDispatcherServlet ''
-[2024-01-02 15:56:29 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
-[2024-01-02 15:56:29 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
-[2024-01-02 15:56:29 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-auto-1"]
-[2024-01-02 15:56:29 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 52650 (http) with context path ''
-[2024-01-02 15:56:29 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Started FeedIntegrationTest in 1.862 seconds (process running for 2.673)
-[2024-01-02 15:56:29 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
-[2024-01-02 15:56:29 INFO  main] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection org.mariadb.jdbc.Connection@24e2355c
-[2024-01-02 15:56:29 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
-[2024-01-02 15:56:30 INFO  main] [com.green.greengram3.feed.FeedService] feedResult : 1
-[2024-01-02 15:56:30 INFO  main] [com.green.greengram3.feed.FeedService] picsResult : 2
-[2024-01-02 15:56:30 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
-[2024-01-02 15:56:30 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
-[2024-01-02 15:57:09 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Starting FeedIntegrationTest using Java 17.0.8.1 with PID 5376 (started by Administrator in D:\Students\kth\greengram3)
-[2024-01-02 15:57:09 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] No active profile set, falling back to 1 default profile: "default"
-[2024-01-02 15:57:10 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 0 (http)
-[2024-01-02 15:57:10 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-auto-1"]
-[2024-01-02 15:57:10 INFO  main] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
-[2024-01-02 15:57:10 INFO  main] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.16]
-[2024-01-02 15:57:10 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
-[2024-01-02 15:57:10 INFO  main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 884 ms
-[2024-01-02 15:57:10 INFO  main] [com.green.greengram3.common.FirebaseConfiguration] FirebaseApp Initialization Complete !!!
-[2024-01-02 15:57:11 INFO  main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-01-02 15:57:11 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring TestDispatcherServlet ''
-[2024-01-02 15:57:11 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
-[2024-01-02 15:57:11 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
-[2024-01-02 15:57:11 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-auto-1"]
-[2024-01-02 15:57:11 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 52666 (http) with context path ''
-[2024-01-02 15:57:11 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Started FeedIntegrationTest in 1.861 seconds (process running for 2.654)
-[2024-01-02 15:57:11 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
-[2024-01-02 15:57:11 INFO  main] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection org.mariadb.jdbc.Connection@12421766
-[2024-01-02 15:57:11 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
-[2024-01-02 15:57:12 INFO  main] [com.green.greengram3.feed.FeedService] feedResult : 1
-[2024-01-02 15:57:12 INFO  main] [com.green.greengram3.feed.FeedService] picsResult : 2
-[2024-01-02 15:57:12 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
-[2024-01-02 15:57:12 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-01-03 09:42:16 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Starting FeedIntegrationTest using Java 17.0.8.1 with PID 7444 (started by Administrator in D:\Students\kth\greengram3)
+[2024-01-03 09:42:16 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] No active profile set, falling back to 1 default profile: "default"
+[2024-01-03 09:42:17 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 0 (http)
+[2024-01-03 09:42:17 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-auto-1"]
+[2024-01-03 09:42:17 INFO  main] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-01-03 09:42:17 INFO  main] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.16]
+[2024-01-03 09:42:17 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-01-03 09:42:17 INFO  main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 909 ms
+[2024-01-03 09:42:17 INFO  main] [com.green.greengram3.common.FirebaseConfiguration] FirebaseApp Initialization Complete !!!
+[2024-01-03 09:42:17 INFO  main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-01-03 09:42:17 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring TestDispatcherServlet ''
+[2024-01-03 09:42:17 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-01-03 09:42:17 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-01-03 09:42:17 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-auto-1"]
+[2024-01-03 09:42:17 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 50247 (http) with context path ''
+[2024-01-03 09:42:17 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Started FeedIntegrationTest in 1.983 seconds (process running for 2.808)
+[2024-01-03 09:42:18 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-01-03 09:42:18 INFO  main] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection org.mariadb.jdbc.Connection@77d54a41
+[2024-01-03 09:42:18 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-01-03 09:42:18 INFO  main] [com.green.greengram3.feed.FeedService] feedResult : 1
+[2024-01-03 09:42:18 INFO  main] [com.green.greengram3.feed.FeedService] picsResult : 2
+[2024-01-03 09:42:18 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-01-03 09:42:18 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-01-03 09:43:20 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Starting FeedIntegrationTest using Java 17.0.8.1 with PID 5748 (started by Administrator in D:\Students\kth\greengram3)
+[2024-01-03 09:43:20 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] No active profile set, falling back to 1 default profile: "default"
+[2024-01-03 09:43:21 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 0 (http)
+[2024-01-03 09:43:21 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-auto-1"]
+[2024-01-03 09:43:21 INFO  main] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-01-03 09:43:21 INFO  main] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.16]
+[2024-01-03 09:43:21 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-01-03 09:43:21 INFO  main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 864 ms
+[2024-01-03 09:43:21 INFO  main] [com.green.greengram3.common.FirebaseConfiguration] FirebaseApp Initialization Complete !!!
+[2024-01-03 09:43:22 INFO  main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-01-03 09:43:22 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring TestDispatcherServlet ''
+[2024-01-03 09:43:22 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-01-03 09:43:22 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-01-03 09:43:22 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-auto-1"]
+[2024-01-03 09:43:22 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 50265 (http) with context path ''
+[2024-01-03 09:43:22 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Started FeedIntegrationTest in 1.86 seconds (process running for 2.671)
+[2024-01-03 09:43:22 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-01-03 09:43:22 INFO  main] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection org.mariadb.jdbc.Connection@1e57b783
+[2024-01-03 09:43:22 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-01-03 09:43:23 INFO  main] [com.green.greengram3.feed.FeedService] feedResult : 1
+[2024-01-03 09:43:23 INFO  main] [com.green.greengram3.feed.FeedService] picsResult : 2
+[2024-01-03 09:43:23 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-01-03 09:43:23 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-01-03 09:43:41 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Starting FeedIntegrationTest using Java 17.0.8.1 with PID 2456 (started by Administrator in D:\Students\kth\greengram3)
+[2024-01-03 09:43:41 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] No active profile set, falling back to 1 default profile: "default"
+[2024-01-03 09:43:41 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 0 (http)
+[2024-01-03 09:43:41 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-auto-1"]
+[2024-01-03 09:43:41 INFO  main] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-01-03 09:43:41 INFO  main] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.16]
+[2024-01-03 09:43:41 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-01-03 09:43:41 INFO  main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 885 ms
+[2024-01-03 09:43:41 INFO  main] [com.green.greengram3.common.FirebaseConfiguration] FirebaseApp Initialization Complete !!!
+[2024-01-03 09:43:42 INFO  main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-01-03 09:43:42 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring TestDispatcherServlet ''
+[2024-01-03 09:43:42 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-01-03 09:43:42 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-01-03 09:43:42 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-auto-1"]
+[2024-01-03 09:43:42 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 50282 (http) with context path ''
+[2024-01-03 09:43:42 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Started FeedIntegrationTest in 1.876 seconds (process running for 2.713)
+[2024-01-03 09:43:42 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-01-03 09:43:42 INFO  main] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection org.mariadb.jdbc.Connection@65503a26
+[2024-01-03 09:43:42 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-01-03 09:43:43 INFO  main] [com.green.greengram3.feed.FeedService] feedResult : 1
+[2024-01-03 09:43:43 INFO  main] [com.green.greengram3.feed.FeedService] picsResult : 2
+[2024-01-03 09:43:43 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-01-03 09:43:43 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-01-03 09:44:25 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Starting FeedIntegrationTest using Java 17.0.8.1 with PID 7780 (started by Administrator in D:\Students\kth\greengram3)
+[2024-01-03 09:44:25 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] No active profile set, falling back to 1 default profile: "default"
+[2024-01-03 09:44:25 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 0 (http)
+[2024-01-03 09:44:25 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-auto-1"]
+[2024-01-03 09:44:25 INFO  main] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-01-03 09:44:25 INFO  main] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.16]
+[2024-01-03 09:44:25 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-01-03 09:44:25 INFO  main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 868 ms
+[2024-01-03 09:44:26 INFO  main] [com.green.greengram3.common.FirebaseConfiguration] FirebaseApp Initialization Complete !!!
+[2024-01-03 09:44:26 INFO  main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-01-03 09:44:26 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring TestDispatcherServlet ''
+[2024-01-03 09:44:26 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-01-03 09:44:26 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-01-03 09:44:26 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-auto-1"]
+[2024-01-03 09:44:26 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 50301 (http) with context path ''
+[2024-01-03 09:44:26 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Started FeedIntegrationTest in 1.849 seconds (process running for 2.648)
+[2024-01-03 09:44:26 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-01-03 09:44:26 INFO  main] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection org.mariadb.jdbc.Connection@1e57b783
+[2024-01-03 09:44:26 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-01-03 09:44:27 INFO  main] [com.green.greengram3.feed.FeedService] feedResult : 1
+[2024-01-03 09:44:27 INFO  main] [com.green.greengram3.feed.FeedService] picsResult : 2
+[2024-01-03 09:44:27 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-01-03 09:44:27 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-01-03 09:48:12 INFO  main] [com.green.greengram3.feed.FeedControllerTest] Starting FeedControllerTest using Java 17.0.8.1 with PID 6296 (started by Administrator in D:\Students\kth\greengram3)
+[2024-01-03 09:48:12 INFO  main] [com.green.greengram3.feed.FeedControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-01-03 09:48:13 INFO  main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-01-03 09:48:13 INFO  main] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-01-03 09:48:13 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-01-03 09:48:13 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-01-03 09:48:13 INFO  main] [com.green.greengram3.feed.FeedControllerTest] Started FeedControllerTest in 1.605 seconds (process running for 2.41)
+[2024-01-03 10:38:17 INFO  main] [com.green.greengram3.feed.FeedControllerTest] Starting FeedControllerTest using Java 17.0.8.1 with PID 8352 (started by Administrator in D:\Students\kth\greengram3)
+[2024-01-03 10:38:17 INFO  main] [com.green.greengram3.feed.FeedControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-01-03 10:38:19 INFO  main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-01-03 10:38:19 INFO  main] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-01-03 10:38:19 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-01-03 10:38:19 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-01-03 10:38:19 INFO  main] [com.green.greengram3.feed.FeedControllerTest] Started FeedControllerTest in 1.672 seconds (process running for 2.399)
+[2024-01-03 10:38:32 [32mINFO [0;39m restartedMain] [com.green.greengram3.Greengram3Application] [36mStarting Greengram3Application using Java 17.0.8.1 with PID 4072 (D:\Students\kth\greengram3\target\classes started by Administrator in D:\Students\kth\greengram3)[0;39m
+[2024-01-03 10:38:32 [32mINFO [0;39m restartedMain] [com.green.greengram3.Greengram3Application] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-01-03 10:38:32 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[0;39m
+[2024-01-03 10:38:32 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[0;39m
+[2024-01-03 10:38:32 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8082 (http)[0;39m
+[2024-01-03 10:38:32 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8082"][0;39m
+[2024-01-03 10:38:32 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2024-01-03 10:38:32 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.16][0;39m
+[2024-01-03 10:38:32 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2024-01-03 10:38:32 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 769 ms[0;39m
+[2024-01-03 10:38:32 [32mINFO [0;39m restartedMain] [com.green.greengram3.common.FirebaseConfiguration] [36mFirebaseApp Initialization Complete !!![0;39m
+[2024-01-03 10:38:33 [32mINFO [0;39m restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] [36mAdding welcome page: class path resource [static/index.html][0;39m
+[2024-01-03 10:38:33 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2024-01-03 10:38:33 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8082"][0;39m
+[2024-01-03 10:38:33 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8082 (http) with context path ''[0;39m
+[2024-01-03 10:38:33 [32mINFO [0;39m restartedMain] [com.green.greengram3.Greengram3Application] [36mStarted Greengram3Application in 1.686 seconds (process running for 2.097)[0;39m
+[2024-01-03 10:38:40 [32mINFO [0;39m http-nio-8082-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
+[2024-01-03 10:38:40 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
+[2024-01-03 10:38:40 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
+[2024-01-03 10:38:40 [32mINFO [0;39m http-nio-8082-exec-7] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Starting...[0;39m
+[2024-01-03 10:38:40 [32mINFO [0;39m http-nio-8082-exec-7] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-1 - Added connection org.mariadb.jdbc.Connection@23279479[0;39m
+[2024-01-03 10:38:40 [32mINFO [0;39m http-nio-8082-exec-7] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Start completed.[0;39m
+[2024-01-03 10:42:40 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)[0;39m
+[2024-01-03 10:42:40 [32mINFO [0;39m Thread-5] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8082"][0;39m
+[2024-01-03 10:42:40 [32mINFO [0;39m Thread-5] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown initiated...[0;39m
+[2024-01-03 10:42:40 [32mINFO [0;39m Thread-5] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown completed.[0;39m
+[2024-01-03 10:42:40 [32mINFO [0;39m restartedMain] [com.green.greengram3.Greengram3Application] [36mStarting Greengram3Application using Java 17.0.8.1 with PID 4072 (D:\Students\kth\greengram3\target\classes started by Administrator in D:\Students\kth\greengram3)[0;39m
+[2024-01-03 10:42:40 [32mINFO [0;39m restartedMain] [com.green.greengram3.Greengram3Application] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-01-03 10:42:40 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8082 (http)[0;39m
+[2024-01-03 10:42:40 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8082"][0;39m
+[2024-01-03 10:42:40 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2024-01-03 10:42:40 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.16][0;39m
+[2024-01-03 10:42:40 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2024-01-03 10:42:40 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 180 ms[0;39m
+[2024-01-03 10:42:40 [32mINFO [0;39m restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] [36mAdding welcome page: class path resource [static/index.html][0;39m
+[2024-01-03 10:42:40 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2024-01-03 10:42:40 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8082"][0;39m
+[2024-01-03 10:42:40 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8082 (http) with context path ''[0;39m
+[2024-01-03 10:42:40 [32mINFO [0;39m restartedMain] [com.green.greengram3.Greengram3Application] [36mStarted Greengram3Application in 0.339 seconds (process running for 249.161)[0;39m
+[2024-01-03 10:42:40 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] [36mCondition evaluation unchanged[0;39m
+[2024-01-03 10:46:37 [32mINFO [0;39m http-nio-8082-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
+[2024-01-03 10:46:37 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
+[2024-01-03 10:46:37 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
+[2024-01-03 10:46:37 [32mINFO [0;39m http-nio-8082-exec-6] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-2 - Starting...[0;39m
+[2024-01-03 10:46:37 [32mINFO [0;39m http-nio-8082-exec-6] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-2 - Added connection org.mariadb.jdbc.Connection@4ddbf090[0;39m
+[2024-01-03 10:46:37 [32mINFO [0;39m http-nio-8082-exec-6] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-2 - Start completed.[0;39m
+[2024-01-03 10:46:59 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)[0;39m
+[2024-01-03 10:46:59 [32mINFO [0;39m Thread-7] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8082"][0;39m
+[2024-01-03 10:46:59 [32mINFO [0;39m Thread-7] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-2 - Shutdown initiated...[0;39m
+[2024-01-03 10:46:59 [32mINFO [0;39m Thread-7] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-2 - Shutdown completed.[0;39m
+[2024-01-03 10:46:59 [32mINFO [0;39m restartedMain] [com.green.greengram3.Greengram3Application] [36mStarting Greengram3Application using Java 17.0.8.1 with PID 4072 (D:\Students\kth\greengram3\target\classes started by Administrator in D:\Students\kth\greengram3)[0;39m
+[2024-01-03 10:46:59 [32mINFO [0;39m restartedMain] [com.green.greengram3.Greengram3Application] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-01-03 10:46:59 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8082 (http)[0;39m
+[2024-01-03 10:46:59 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8082"][0;39m
+[2024-01-03 10:46:59 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2024-01-03 10:46:59 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.16][0;39m
+[2024-01-03 10:46:59 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2024-01-03 10:46:59 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 190 ms[0;39m
+[2024-01-03 10:46:59 [32mINFO [0;39m restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] [36mAdding welcome page: class path resource [static/index.html][0;39m
+[2024-01-03 10:46:59 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2024-01-03 10:46:59 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8082"][0;39m
+[2024-01-03 10:46:59 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8082 (http) with context path ''[0;39m
+[2024-01-03 10:46:59 [32mINFO [0;39m restartedMain] [com.green.greengram3.Greengram3Application] [36mStarted Greengram3Application in 0.356 seconds (process running for 508.622)[0;39m
+[2024-01-03 10:46:59 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] [36mCondition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   ErrorMvcAutoConfiguration#basicErrorController matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.servlet.error.ErrorController; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+[0;39m
+[2024-01-03 10:47:03 [32mINFO [0;39m http-nio-8082-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
+[2024-01-03 10:47:03 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
+[2024-01-03 10:47:03 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
+[2024-01-03 10:47:03 [32mINFO [0;39m http-nio-8082-exec-5] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-3 - Starting...[0;39m
+[2024-01-03 10:47:03 [32mINFO [0;39m http-nio-8082-exec-5] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-3 - Added connection org.mariadb.jdbc.Connection@2cd1044a[0;39m
+[2024-01-03 10:47:03 [32mINFO [0;39m http-nio-8082-exec-5] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-3 - Start completed.[0;39m
+[2024-01-03 10:52:13 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)[0;39m
+[2024-01-03 10:52:13 [32mINFO [0;39m Thread-11] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8082"][0;39m
+[2024-01-03 10:52:13 [32mINFO [0;39m Thread-11] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-3 - Shutdown initiated...[0;39m
+[2024-01-03 10:52:13 [32mINFO [0;39m Thread-11] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-3 - Shutdown completed.[0;39m
+[2024-01-03 10:52:13 [32mINFO [0;39m restartedMain] [com.green.greengram3.Greengram3Application] [36mStarting Greengram3Application using Java 17.0.8.1 with PID 4072 (D:\Students\kth\greengram3\target\classes started by Administrator in D:\Students\kth\greengram3)[0;39m
+[2024-01-03 10:52:13 [32mINFO [0;39m restartedMain] [com.green.greengram3.Greengram3Application] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-01-03 10:52:13 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8082 (http)[0;39m
+[2024-01-03 10:52:13 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8082"][0;39m
+[2024-01-03 10:52:13 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2024-01-03 10:52:13 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.16][0;39m
+[2024-01-03 10:52:13 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2024-01-03 10:52:13 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 171 ms[0;39m
+[2024-01-03 10:52:13 [32mINFO [0;39m restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] [36mAdding welcome page: class path resource [static/index.html][0;39m
+[2024-01-03 10:52:13 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2024-01-03 10:52:13 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8082"][0;39m
+[2024-01-03 10:52:13 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8082 (http) with context path ''[0;39m
+[2024-01-03 10:52:13 [32mINFO [0;39m restartedMain] [com.green.greengram3.Greengram3Application] [36mStarted Greengram3Application in 0.327 seconds (process running for 822.098)[0;39m
+[2024-01-03 10:52:13 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] [36mCondition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   ErrorMvcAutoConfiguration#basicErrorController:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.boot.web.servlet.error.ErrorController; SearchStrategy: current) found beans of type 'org.springframework.boot.web.servlet.error.ErrorController' webController (OnBeanCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+[0;39m
+[2024-01-03 10:52:14 [32mINFO [0;39m http-nio-8082-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
+[2024-01-03 10:52:14 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
+[2024-01-03 10:52:14 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 0 ms[0;39m
+[2024-01-03 10:52:14 [32mINFO [0;39m http-nio-8082-exec-4] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-4 - Starting...[0;39m
+[2024-01-03 10:52:14 [32mINFO [0;39m http-nio-8082-exec-4] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-4 - Added connection org.mariadb.jdbc.Connection@500aaca5[0;39m
+[2024-01-03 10:52:14 [32mINFO [0;39m http-nio-8082-exec-4] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-4 - Start completed.[0;39m
+[2024-01-03 10:54:49 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)[0;39m
+[2024-01-03 10:54:49 [32mINFO [0;39m Thread-15] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8082"][0;39m
+[2024-01-03 10:54:49 [32mINFO [0;39m Thread-15] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-4 - Shutdown initiated...[0;39m
+[2024-01-03 10:54:49 [32mINFO [0;39m Thread-15] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-4 - Shutdown completed.[0;39m
+[2024-01-03 10:54:49 [32mINFO [0;39m restartedMain] [com.green.greengram3.Greengram3Application] [36mStarting Greengram3Application using Java 17.0.8.1 with PID 4072 (D:\Students\kth\greengram3\target\classes started by Administrator in D:\Students\kth\greengram3)[0;39m
+[2024-01-03 10:54:49 [32mINFO [0;39m restartedMain] [com.green.greengram3.Greengram3Application] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-01-03 10:54:49 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8082 (http)[0;39m
+[2024-01-03 10:54:49 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8082"][0;39m
+[2024-01-03 10:54:49 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2024-01-03 10:54:49 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.16][0;39m
+[2024-01-03 10:54:49 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2024-01-03 10:54:49 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 171 ms[0;39m
+[2024-01-03 10:54:49 [32mINFO [0;39m restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] [36mAdding welcome page: class path resource [static/index.html][0;39m
+[2024-01-03 10:54:49 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2024-01-03 10:54:49 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8082"][0;39m
+[2024-01-03 10:54:49 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8082 (http) with context path ''[0;39m
+[2024-01-03 10:54:49 [32mINFO [0;39m restartedMain] [com.green.greengram3.Greengram3Application] [36mStarted Greengram3Application in 0.335 seconds (process running for 978.182)[0;39m
+[2024-01-03 10:54:49 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] [36mCondition evaluation unchanged[0;39m
+[2024-01-03 10:54:50 [32mINFO [0;39m http-nio-8082-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
+[2024-01-03 10:54:50 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
+[2024-01-03 10:54:50 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
+[2024-01-03 10:54:50 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-5 - Starting...[0;39m
+[2024-01-03 10:54:50 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-5 - Added connection org.mariadb.jdbc.Connection@637e6d2c[0;39m
+[2024-01-03 10:54:50 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-5 - Start completed.[0;39m
+[2024-01-03 11:04:41 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)[0;39m
+[2024-01-03 11:04:41 [32mINFO [0;39m Thread-19] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8082"][0;39m
+[2024-01-03 11:04:41 [32mINFO [0;39m Thread-19] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-5 - Shutdown initiated...[0;39m
+[2024-01-03 11:04:41 [32mINFO [0;39m Thread-19] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-5 - Shutdown completed.[0;39m
+[2024-01-03 11:04:41 [32mINFO [0;39m restartedMain] [com.green.greengram3.Greengram3Application] [36mStarting Greengram3Application using Java 17.0.8.1 with PID 4072 (D:\Students\kth\greengram3\target\classes started by Administrator in D:\Students\kth\greengram3)[0;39m
+[2024-01-03 11:04:41 [32mINFO [0;39m restartedMain] [com.green.greengram3.Greengram3Application] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-01-03 11:04:42 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8082 (http)[0;39m
+[2024-01-03 11:04:42 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8082"][0;39m
+[2024-01-03 11:04:42 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2024-01-03 11:04:42 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.16][0;39m
+[2024-01-03 11:04:42 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2024-01-03 11:04:42 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 165 ms[0;39m
+[2024-01-03 11:04:42 [32mINFO [0;39m restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] [36mAdding welcome page: class path resource [static/index.html][0;39m
+[2024-01-03 11:04:42 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2024-01-03 11:04:42 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8082"][0;39m
+[2024-01-03 11:04:42 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8082 (http) with context path ''[0;39m
+[2024-01-03 11:04:42 [32mINFO [0;39m restartedMain] [com.green.greengram3.Greengram3Application] [36mStarted Greengram3Application in 0.315 seconds (process running for 1570.843)[0;39m
+[2024-01-03 11:04:42 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] [36mCondition evaluation unchanged[0;39m
+[2024-01-03 11:08:10 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)[0;39m
+[2024-01-03 11:08:10 [32mINFO [0;39m Thread-23] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8082"][0;39m
+[2024-01-03 11:08:10 [32mINFO [0;39m restartedMain] [com.green.greengram3.Greengram3Application] [36mStarting Greengram3Application using Java 17.0.8.1 with PID 4072 (D:\Students\kth\greengram3\target\classes started by Administrator in D:\Students\kth\greengram3)[0;39m
+[2024-01-03 11:08:10 [32mINFO [0;39m restartedMain] [com.green.greengram3.Greengram3Application] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-01-03 11:08:10 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8082 (http)[0;39m
+[2024-01-03 11:08:10 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8082"][0;39m
+[2024-01-03 11:08:10 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2024-01-03 11:08:10 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.16][0;39m
+[2024-01-03 11:08:10 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2024-01-03 11:08:10 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 162 ms[0;39m
+[2024-01-03 11:08:10 [32mINFO [0;39m restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] [36mAdding welcome page: class path resource [static/index.html][0;39m
+[2024-01-03 11:08:10 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2024-01-03 11:08:10 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8082"][0;39m
+[2024-01-03 11:08:10 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8082 (http) with context path ''[0;39m
+[2024-01-03 11:08:10 [32mINFO [0;39m restartedMain] [com.green.greengram3.Greengram3Application] [36mStarted Greengram3Application in 0.303 seconds (process running for 1779.099)[0;39m
+[2024-01-03 11:08:10 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] [36mCondition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   ErrorMvcAutoConfiguration#basicErrorController matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.servlet.error.ErrorController; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+[0;39m
+[2024-01-03 11:15:32 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Starting FeedIntegrationTest using Java 17.0.8.1 with PID 3700 (started by Administrator in D:\Students\kth\greengram3)
+[2024-01-03 11:15:32 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] No active profile set, falling back to 1 default profile: "default"
+[2024-01-03 11:15:33 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 0 (http)
+[2024-01-03 11:15:33 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-auto-1"]
+[2024-01-03 11:15:33 INFO  main] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-01-03 11:15:33 INFO  main] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.16]
+[2024-01-03 11:15:33 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-01-03 11:15:33 INFO  main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 874 ms
+[2024-01-03 11:15:33 INFO  main] [com.green.greengram3.common.FirebaseConfiguration] FirebaseApp Initialization Complete !!!
+[2024-01-03 11:15:33 INFO  main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-01-03 11:15:34 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring TestDispatcherServlet ''
+[2024-01-03 11:15:34 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-01-03 11:15:34 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-01-03 11:15:34 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-auto-1"]
+[2024-01-03 11:15:34 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 50876 (http) with context path ''
+[2024-01-03 11:15:34 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Started FeedIntegrationTest in 1.858 seconds (process running for 2.664)
+[2024-01-03 11:15:34 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-01-03 11:15:34 INFO  main] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection org.mariadb.jdbc.Connection@4990b335
+[2024-01-03 11:15:34 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-01-03 11:15:34 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-01-03 11:15:34 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-01-03 11:16:23 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Starting FeedIntegrationTest using Java 17.0.8.1 with PID 1816 (started by Administrator in D:\Students\kth\greengram3)
+[2024-01-03 11:16:23 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] No active profile set, falling back to 1 default profile: "default"
+[2024-01-03 11:16:24 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 0 (http)
+[2024-01-03 11:16:24 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-auto-1"]
+[2024-01-03 11:16:24 INFO  main] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-01-03 11:16:24 INFO  main] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.16]
+[2024-01-03 11:16:24 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-01-03 11:16:24 INFO  main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 875 ms
+[2024-01-03 11:16:24 INFO  main] [com.green.greengram3.common.FirebaseConfiguration] FirebaseApp Initialization Complete !!!
+[2024-01-03 11:16:25 INFO  main] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-01-03 11:16:25 INFO  main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring TestDispatcherServlet ''
+[2024-01-03 11:16:25 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-01-03 11:16:25 INFO  main] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-01-03 11:16:25 INFO  main] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-auto-1"]
+[2024-01-03 11:16:25 INFO  main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 50893 (http) with context path ''
+[2024-01-03 11:16:25 INFO  main] [com.green.greengram3.feed.FeedIntegrationTest] Started FeedIntegrationTest in 1.863 seconds (process running for 2.657)
+[2024-01-03 11:16:25 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-01-03 11:16:25 INFO  main] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection org.mariadb.jdbc.Connection@f36f34d
+[2024-01-03 11:16:25 INFO  main] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-01-03 11:16:25 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-01-03 11:16:25 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.

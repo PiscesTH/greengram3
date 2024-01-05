@@ -1,6 +1,7 @@
 package com.green.greengram3.feed;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.green.greengram3.CharEncodingConfig;
 import com.green.greengram3.MockMvcConfig;
 import com.green.greengram3.common.ResVo;
 import com.green.greengram3.feed.model.FeedInsDto;
@@ -9,6 +10,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.context.annotation.Import;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
@@ -25,7 +27,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@MockMvcConfig //한글 안 깨지게 해주는 어노테이션 만들어서 사용
+//@MockMvcConfig //한글 안 깨지게 해주는 어노테이션 만들어서 사용
+@Import(CharEncodingConfig.class)
 @WebMvcTest(FeedController.class) //스프링 컨테이너 올려줌. feedController 빈 등록 됨
 class FeedControllerTest {
 
